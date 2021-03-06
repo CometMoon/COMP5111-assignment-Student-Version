@@ -1,0 +1,2 @@
+Generate randoop test
+java -ea -classpath "./lib/randoop-all-4.2.5.jar;./target/classes" randoop.main.Main gentests --testclass=comp5111.assignment.cut.ToolBox --time-limit=120 --junit-package-name=comp5111.assignment.cut --randomseed=%random% --junit-output-dir=./src/test/randoop0

@@ -251,6 +251,81 @@ public class MyCounter {
 	        }
 		
 		}
+		
+		/*
+		 * Export all executed statements
+		 */
+		try {
+		
+			File ofile = new File("executedStatement/executed_statement.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			for (Map.Entry<String, Integer> entry : statements.entrySet()) {
+				
+				String statementID = entry.getKey();
+				
+				writer.write(statementID+"\r\n");
+				
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			
+			System.err.println("Write executed statement error...");
+			
+		}
+		
+		/*
+		 * Export all executed branches
+		 */
+		try {
+		
+			File ofile = new File("executedBranch/executed_branches.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			for (Map.Entry<String, Integer> entry : branches.entrySet()) {
+				
+				String branchID = entry.getKey();
+				
+				writer.write(branchID+"\r\n");
+				
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			
+			System.err.println("Write executed branch error...");
+			
+		}
+		
+		/*
+		 * Export all executed lines
+		 */
+		try {
+		
+			File ofile = new File("executedLine/executed_lines.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			for (Map.Entry<String, Integer> entry : lines.entrySet()) {
+				
+				String lineNumber = entry.getKey();
+				
+				writer.write(lineNumber+"\r\n");
+				
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			
+			System.err.println("Write executed line error...");
+			
+		}
 	
 	}
 }

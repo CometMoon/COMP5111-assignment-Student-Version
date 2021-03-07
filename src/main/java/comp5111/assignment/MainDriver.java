@@ -39,7 +39,7 @@ public class MainDriver {
 		
 		soot.Main.main(args);
 		
-		InvokeInstrumenter.saveJimpleCode();
+		InvokeInstrumenter.saveMarkedCode();
 		
 	}
 	

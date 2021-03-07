@@ -18,6 +18,7 @@ public class InvokeInstrumenter extends BodyTransformer {
 	static HashMap<String, Integer> classLineCount;
 	static HashMap<String, Integer> lineCount;
 	static HashMap<String, String> statementJimple;
+	static HashMap<String, String> ifStatementJimple;
 	static int statementCounter = 1;
 
 	static {
@@ -32,6 +33,7 @@ public class InvokeInstrumenter extends BodyTransformer {
 		classLineCount = new HashMap<>();
 		lineCount = new HashMap<>();
 		statementJimple = new HashMap<>();
+		ifStatementJimple = new HashMap<>();
 		Scene.v().setSootClassPath(null);
 	}
 
@@ -116,6 +118,8 @@ public class InvokeInstrumenter extends BodyTransformer {
 			}
 			
 			if (stmt instanceof JIfStmt) {
+				
+				ifStatementJimple.put(statementID, String.valueOf(stmt));
 				
 				classBranchCount.put(className, classBranchCount.get(className)+1);
 
@@ -248,19 +252,17 @@ public class InvokeInstrumenter extends BodyTransformer {
 		
 	}
 	
-	public static void saveJimpleCode() {
+	public static void saveMarkedCode() {
 		
-		BufferedWriter writer = null;
-			
+		
+		/*
+		 * Export Statement
+		 */
 		try {
 			
-			// Export all statements with id
-			File oDir = new File("scripts/statement_map/");
-			oDir.mkdirs();
+			File ofile = new File("scripts/numOfStatement/statements.txt");
 			
-			File ofile = new File("scripts/statement_map/statement_map.txt");
-			
-			writer = new BufferedWriter(new FileWriter(ofile));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 			
 			for (Map.Entry<String, String> entry : statementJimple.entrySet()) {
 				
@@ -271,9 +273,62 @@ public class InvokeInstrumenter extends BodyTransformer {
 			
 			}
 			
+			writer.close();
+			
         } catch (Exception e) {
 
-        	System.err.println("Export Jimple error...");
+        	System.err.println("Export Statement error...");
+        	
+        }
+		
+		/*
+		 * Export Branch
+		 */
+		try {
+			
+			File ofile = new File("scripts/numOfBranch/branches.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			for (Map.Entry<String, String> entry : ifStatementJimple.entrySet()) {
+				
+				String statementID = entry.getKey();
+			    String jimpleCode = entry.getValue();
+			
+			    writer.write(statementID + ":" + jimpleCode + "\r\n");
+			
+			}
+			
+			writer.close();
+			
+        } catch (Exception e) {
+
+        	System.err.println("Export Branch error...");
+        	
+        }
+		
+		/*
+		 * Export Line
+		 */
+		try {
+			
+			File ofile = new File("scripts/numOfLine/lines.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			for (Map.Entry<String, Integer> entry : lineCount.entrySet()) {
+				
+				String lineNumber = entry.getKey();
+			
+			    writer.write(lineNumber + "\r\n");
+			
+			}
+			
+			writer.close();
+			
+        } catch (Exception e) {
+
+        	System.err.println("Export Line error...");
         	
         }
 	}

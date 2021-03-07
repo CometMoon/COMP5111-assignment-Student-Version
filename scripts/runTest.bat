@@ -2,6 +2,7 @@
 rmdir /s /Q "classes"
 rmdir /s /Q "executedBranch"
 rmdir /s /Q "executedStatement"
+rmdir /s /Q "executedLine"
 robocopy /E "../target/classes" "classes"
 pushd "classes/comp5111/assignment/cut"
 del "ToolBox*" /Q

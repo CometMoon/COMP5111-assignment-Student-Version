@@ -1,0 +1,46 @@
+
+--- Statement Coverage ---
+
+100.0% | comp5111.assignment.cut.ToolBox$ArrayTools
+24.58% | comp5111.assignment.cut.ToolBox$CharSequenceTools
+100.0% | comp5111.assignment.cut.ToolBox$CharTools
+28.16% | comp5111.assignment.cut.ToolBox$LocaleTools
+69.44% | comp5111.assignment.cut.ToolBox$RegExTools
+66.22% | comp5111.assignment.cut.ToolBox$StringTools
+100.0% | comp5111.assignment.cut.ToolBox
+
+Overall Total Number of Statement: 1010
+Overall Number of Executed Statement: 537
+
+Overall Statement Coverage: 53.16%
+
+--- Branch Coverage ---
+
+100.0% | comp5111.assignment.cut.ToolBox$ArrayTools
+17.21% | comp5111.assignment.cut.ToolBox$CharSequenceTools
+100.0% | comp5111.assignment.cut.ToolBox$CharTools
+18.96% | comp5111.assignment.cut.ToolBox$LocaleTools
+43.33% | comp5111.assignment.cut.ToolBox$RegExTools
+53.70% | comp5111.assignment.cut.ToolBox$StringTools
+100.00% | comp5111.assignment.cut.ToolBox
+
+Overall Total Number of Branch: 556
+Overall Number of Executed Branch: 241
+
+Overall Branch Coverage: 43.34%
+
+--- Line Coverage ---
+
+100.0% | comp5111.assignment.cut.ToolBox$ArrayTools
+23.57% | comp5111.assignment.cut.ToolBox$CharSequenceTools
+100.0% | comp5111.assignment.cut.ToolBox$CharTools
+39.13% | comp5111.assignment.cut.ToolBox$LocaleTools
+68.75% | comp5111.assignment.cut.ToolBox$RegExTools
+68.84% | comp5111.assignment.cut.ToolBox$StringTools
+100.0% | comp5111.assignment.cut.ToolBox
+
+Overall Total Number of Line: 466
+Overall Number of Executed Line: 258
+
+Overall Line Coverage: 55.36%
+

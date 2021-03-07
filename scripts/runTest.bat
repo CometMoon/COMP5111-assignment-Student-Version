@@ -1,5 +1,7 @@
 @echo off
-rmdir /s /Q "tmp"
+rmdir /s /Q "classes"
+rmdir /s /Q "executedBranch"
+rmdir /s /Q "executedStatement"
 robocopy /E "../target/classes" "classes"
 pushd "classes/comp5111/assignment/cut"
 del "ToolBox*" /Q

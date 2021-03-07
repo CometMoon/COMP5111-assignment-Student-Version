@@ -32,6 +32,4 @@ set /a coverageFlt=!allExecutedStatement!*10000 / !allStatement! %% 100
 	
 set coverage=!coverageInt!.!coverageFlt!
 
-echo Total Coverage: !coverage!%%
-
-pause
+echo Overall Statement Coverage: !coverage!%%

@@ -1,20 +1,24 @@
 package comp5111.assignment;
 import soot.*;
+import soot.jimple.internal.*;
 import soot.jimple.*;
 import soot.util.*;
 
+import java.io.*;
 import java.util.*;
 
 public class InvokeInstrumenter extends BodyTransformer {
 
 	static SootClass counterClass;
-	static SootMethod increaseCounter, reportCounter;
+	static SootMethod increaseStatementCounter, reportStatementCounter;
 	static int statementID = 1;
+	static HashMap<String, Integer> classStatementCount;
 
 	static {
 		counterClass = Scene.v().loadClassAndSupport("comp5111.assignment.MyCounter");
-		increaseCounter = counterClass.getMethod("void increaseStatementCounter(int)");
-		reportCounter = counterClass.getMethod("void reportStatementCounter()");
+		increaseStatementCounter = counterClass.getMethod("void increaseStatementCounter(java.lang.String,int)");
+		reportStatementCounter = counterClass.getMethod("void reportStatementCounter()");
+		classStatementCount = new HashMap<>();
 		Scene.v().setSootClassPath(null);
 	}
 
@@ -23,8 +27,11 @@ public class InvokeInstrumenter extends BodyTransformer {
 	 * instructions before each statement
 	 */
 	protected void internalTransform(Body body, String phase, Map options) {
+		
 		// body's method
 		SootMethod method = body.getMethod();
+		
+		String className = method.getDeclaringClass().toString();
 
 		// debugging
 		System.out.println("instrumenting method : " + method.getSignature());
@@ -37,21 +44,31 @@ public class InvokeInstrumenter extends BodyTransformer {
 		
 		// iterating over each statement
 		while (stmtIt.hasNext()) {
-
-			System.err.println(statementID);
 			
 			// cast back to a statement.
 			Stmt stmt = (Stmt) stmtIt.next();
 
-			// call Chain.insertBefore() to insert instructions
-			InvokeExpr incExpr = Jimple.v().newStaticInvokeExpr(
-					increaseCounter.makeRef(), IntConstant.v(statementID));
-
-			Stmt incStmt = Jimple.v().newInvokeStmt(incExpr);
-
-			units.insertBefore(incStmt, stmt);
-			
-			statementID++;
+			if (!(stmt instanceof JIdentityStmt)) {
+				
+				if (!classStatementCount.containsKey(className)) {
+					
+					classStatementCount.put(className, 0);
+		            
+		        }
+				
+				classStatementCount.put(className, classStatementCount.get(className)+1);
+				
+				// call Chain.insertBefore() to insert instructions
+				InvokeExpr incExpr = Jimple.v().newStaticInvokeExpr(
+						increaseStatementCounter.makeRef(), StringConstant.v(className), IntConstant.v(statementID));
+	
+				Stmt incStmt = Jimple.v().newInvokeStmt(incExpr);
+	
+				units.insertBefore(incStmt, stmt);
+				
+				statementID++;
+				
+			}
 			
 		}
 
@@ -70,7 +87,7 @@ public class InvokeInstrumenter extends BodyTransformer {
 						|| (stmt instanceof ReturnVoidStmt)) {
 					
 					InvokeExpr reportExpr = Jimple.v().newStaticInvokeExpr(
-							reportCounter.makeRef());
+							reportStatementCounter.makeRef());
 
 					Stmt reportStmt = Jimple.v().newInvokeStmt(reportExpr);
 
@@ -78,5 +95,26 @@ public class InvokeInstrumenter extends BodyTransformer {
 				}
 			}
 		}
+		
+		try {
+			
+			// Create folder for storing number of statement in each class
+			File oDir = new File("scripts/numOfStatement/");
+			oDir.mkdirs();
+			
+			File ofile = new File("scripts/numOfStatement/" + className + "_" + "statement_count.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			writer.write(Integer.toString(classStatementCount.get(className)));
+			
+			writer.close();
+			
+        } catch (Exception e) {
+
+        	System.err.println("Write file error...");
+        	
+        }
+		
 	}
 }

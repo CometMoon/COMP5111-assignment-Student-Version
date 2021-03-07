@@ -260,7 +260,10 @@ public class InvokeInstrumenter extends BodyTransformer {
 		 */
 		try {
 			
-			File ofile = new File("scripts/numOfStatement/statements.txt");
+			File oDir = new File("scripts/numOfStatement/records");
+			oDir.mkdirs();
+			
+			File ofile = new File("scripts/numOfStatement/records/statements.txt");
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 			
@@ -269,7 +272,7 @@ public class InvokeInstrumenter extends BodyTransformer {
 				String statementID = entry.getKey();
 			    String jimpleCode = entry.getValue();
 			
-			    writer.write(statementID + ":" + jimpleCode + "\r\n");
+			    writer.write(statementID + "|" + jimpleCode + "\r\n");
 			
 			}
 			
@@ -286,7 +289,10 @@ public class InvokeInstrumenter extends BodyTransformer {
 		 */
 		try {
 			
-			File ofile = new File("scripts/numOfBranch/branches.txt");
+			File oDir = new File("scripts/numOfBranch/records");
+			oDir.mkdirs();
+			
+			File ofile = new File("scripts/numOfBranch/records/branches.txt");
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 			
@@ -295,7 +301,7 @@ public class InvokeInstrumenter extends BodyTransformer {
 				String statementID = entry.getKey();
 			    String jimpleCode = entry.getValue();
 			
-			    writer.write(statementID + ":" + jimpleCode + "\r\n");
+			    writer.write(statementID + "|" + jimpleCode + "\r\n");
 			
 			}
 			
@@ -312,7 +318,10 @@ public class InvokeInstrumenter extends BodyTransformer {
 		 */
 		try {
 			
-			File ofile = new File("scripts/numOfLine/lines.txt");
+			File oDir = new File("scripts/numOfLine/records");
+			oDir.mkdirs();
+			
+			File ofile = new File("scripts/numOfLine/records/lines.txt");
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 			

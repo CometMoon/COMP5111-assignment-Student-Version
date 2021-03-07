@@ -84,9 +84,7 @@ During the compilation there may have errors like NullPointerException or Write 
 
 5. Three folders `scripts/executedStatement`, `scripts/executedBranch`, and `scripts/executedLine` are created to store the number of executed statement, branch, and line respectively for each class
 
-*Randoop 2 will run a bit longer since the time limit was set to 300s when generating the test case.* 
-
-
+*Randoop 2 will run a bit longer since the time limit was set to 300s when generating the test case.* *Sometime there are write error exist during the testing. It is okay to ignore these errors since the latter output will overwrite them.*
 
 ### Measure the coverage
 
@@ -159,8 +157,10 @@ Press any key to continue . . .
 | Randoop3  | 52.2%                        | 42.1%                     | 54.1%                   | 53.16%                    | 43.34%                 | 55.15%               |
 | Randoop4  | 52.3%                        | 42.1%                     | 54.3%                   | 53.16%                    | 43.34%                 | 55.36%               |
 
+## Coverage for each statement, branch, and line
+
+Run `{projectroot}/scripts/generateCoverageMap.bat` to generate the report on which statements, which branchs, and which lines are covered or not. The report will be located at `{projectroot}/scripts/coverageMap`.
+
 ## Clean up the generated files
 
 Run `{projectroot}/scripts/cleanup.bat` to clean up the generated folders and files before next run to prevent potential error.
-
-

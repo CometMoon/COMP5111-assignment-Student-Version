@@ -1,0 +1,1010 @@
+comp5111.assignment.cut.ToolBox$ArrayTools:200|return 1
+comp5111.assignment.cut.ToolBox$ArrayTools:201|return 0
+comp5111.assignment.cut.ToolBox$StringTools:904|return 1
+comp5111.assignment.cut.ToolBox$StringTools:905|$i33 = 1 + 1
+comp5111.assignment.cut.ToolBox$StringTools:902|$i42 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:903|if i41 < $i42 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:888")
+comp5111.assignment.cut.ToolBox$StringTools:908|if $z2 == 0 goto i44 = i39 + -1
+comp5111.assignment.cut.ToolBox$StringTools:909|i43 = 1 + 1
+comp5111.assignment.cut.ToolBox$StringTools:906|$c34 = r1[$i33]
+comp5111.assignment.cut.ToolBox$StringTools:907|$z2 = staticinvoke <java.lang.Character: boolean isDigit(char)>($c34)
+comp5111.assignment.cut.ToolBox$StringTools:900|return 0
+comp5111.assignment.cut.ToolBox$StringTools:901|i41 = i41 + 1
+comp5111.assignment.cut.ToolBox$StringTools:915|return 0
+comp5111.assignment.cut.ToolBox$StringTools:916|i43 = i43 + 1
+comp5111.assignment.cut.ToolBox$StringTools:913|$c37 = r1[i43]
+comp5111.assignment.cut.ToolBox$StringTools:914|if $c37 <= 55 goto i43 = i43 + 1
+comp5111.assignment.cut.ToolBox$RegExTools:2|specialinvoke r0.<java.lang.Object: void <init>()>()
+comp5111.assignment.cut.ToolBox$StringTools:919|return 1
+comp5111.assignment.cut.ToolBox$StringTools:917|$i35 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:918|if i43 < $i35 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:911")
+comp5111.assignment.cut.ToolBox$RegExTools:6|return
+comp5111.assignment.cut.ToolBox$ArrayTools:220|return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:222|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:221|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:224|return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:223|return 1
+comp5111.assignment.cut.ToolBox$StringTools:911|$c36 = r1[i43]
+comp5111.assignment.cut.ToolBox$StringTools:912|if $c36 < 48 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:910|goto [?= $i35 = lengthof r1]
+comp5111.assignment.cut.ToolBox$StringTools:926|if $c9 > 57 goto $c4 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:927|z6 = 1
+comp5111.assignment.cut.ToolBox$StringTools:924|if $c3 < 48 goto $c4 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:925|$c9 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:928|z5 = 0
+comp5111.assignment.cut.ToolBox$StringTools:929|goto [?= i45 = i45 + 1]
+comp5111.assignment.cut.ToolBox$ArrayTools:217|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:219|return 1
+comp5111.assignment.cut.ToolBox$StringTools:922|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$ArrayTools:218|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:923|$c3 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:920|i44 = i39 + -1
+comp5111.assignment.cut.ToolBox$StringTools:921|i45 = 1
+comp5111.assignment.cut.ToolBox:1|specialinvoke r0.<java.lang.Object: void <init>()>()
+comp5111.assignment.cut.ToolBox:2|return
+comp5111.assignment.cut.ToolBox$LocaleTools:13|return
+comp5111.assignment.cut.ToolBox$LocaleTools:10|specialinvoke r0.<java.lang.Object: void <init>()>()
+comp5111.assignment.cut.ToolBox$StringTools:293|$c9 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i7)
+comp5111.assignment.cut.ToolBox$StringTools:292|$i7 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:295|return 1
+comp5111.assignment.cut.ToolBox$StringTools:294|if $c8 != $c9 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:297|i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:296|return 1
+comp5111.assignment.cut.ToolBox$StringTools:299|i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:298|if i11 < i1 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:283")
+comp5111.assignment.cut.ToolBox$RegExTools:123|if r1 == null goto return r0
+comp5111.assignment.cut.ToolBox$RegExTools:122|if r0 == null goto return r0
+comp5111.assignment.cut.ToolBox$LocaleTools:28|$i0 = virtualinvoke r0.<java.lang.String: int length()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:26|if $z0 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:25|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isAllUpperCase(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$RegExTools:128|return $r4
+comp5111.assignment.cut.ToolBox$RegExTools:125|return r0
+comp5111.assignment.cut.ToolBox$RegExTools:124|if r2 != null goto $r3 = virtualinvoke r1.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$RegExTools:127|$r4 = virtualinvoke $r3.<java.util.regex.Matcher: java.lang.String replaceFirst(java.lang.String)>(r2)
+comp5111.assignment.cut.ToolBox$RegExTools:126|$r3 = virtualinvoke r1.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$LocaleTools:33|return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:31|return 1
+comp5111.assignment.cut.ToolBox$LocaleTools:30|if $i0 != 2 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:399|$r3 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:398|if $z2 == 0 goto i15 = i0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:397|$z2 = r1 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$LocaleTools:158|$z2 = virtualinvoke r8.<java.lang.String: boolean isEmpty()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:159|if $z2 != 0 goto $z8 = virtualinvoke r3.<java.lang.String: boolean isEmpty()>()
+comp5111.assignment.cut.ToolBox$StringTools:491|if $z0 == 0 goto i2 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:160|$z3 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isISO3166CountryCode(java.lang.String)>(r8)
+comp5111.assignment.cut.ToolBox$StringTools:497|if $z1 == 0 goto i2 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:496|$z1 = r1 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$LocaleTools:167|specialinvoke $r4.<java.util.Locale: void <init>(java.lang.String,java.lang.String,java.lang.String)>(r2, r8, r3)
+comp5111.assignment.cut.ToolBox$StringTools:499|$z2 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+comp5111.assignment.cut.ToolBox$LocaleTools:168|return $r4
+comp5111.assignment.cut.ToolBox$LocaleTools:165|if $z8 != 0 goto $r9 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:166|$r4 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$LocaleTools:163|if $z4 == 0 goto $r9 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:164|$z8 = virtualinvoke r3.<java.lang.String: boolean isEmpty()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:161|if $z3 != 0 goto $z8 = virtualinvoke r3.<java.lang.String: boolean isEmpty()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:162|$z4 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isNumericAreaCode(java.lang.String)>(r8)
+comp5111.assignment.cut.ToolBox$LocaleTools:149|$r5 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$LocaleTools:147|$z6 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isNumericAreaCode(java.lang.String)>(r7)
+comp5111.assignment.cut.ToolBox$LocaleTools:148|if $z6 == 0 goto $r9 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:156|$z1 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isISO639LanguageCode(java.lang.String)>(r2)
+comp5111.assignment.cut.ToolBox$LocaleTools:157|if $z1 == 0 goto $r9 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:154|r8 = r1[1]
+comp5111.assignment.cut.ToolBox$LocaleTools:155|r3 = r1[2]
+comp5111.assignment.cut.ToolBox$StringTools:269|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$LocaleTools:152|$i1 = lengthof r1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:396|if $z0 == 0 goto i15 = i0
+comp5111.assignment.cut.ToolBox$LocaleTools:153|if $i1 != 3 goto $r9 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$CharSequenceTools:395|$z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$LocaleTools:150|specialinvoke $r5.<java.util.Locale: void <init>(java.lang.String,java.lang.String)>(r2, r7)
+comp5111.assignment.cut.ToolBox$LocaleTools:151|return $r5
+comp5111.assignment.cut.ToolBox$StringTools:280|c4 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i10)
+comp5111.assignment.cut.ToolBox$StringTools:271|$z1 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: boolean isEmpty(char[])>(r1)
+comp5111.assignment.cut.ToolBox$StringTools:270|if $z0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:273|return 0
+comp5111.assignment.cut.ToolBox$StringTools:272|if $z1 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:275|i1 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:274|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:277|i3 = i1 - 1
+comp5111.assignment.cut.ToolBox$StringTools:276|i2 = i0 - 1
+comp5111.assignment.cut.ToolBox$StringTools:279|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:278|i10 = 0
+comp5111.assignment.cut.ToolBox$StringTools:1001|return 0
+comp5111.assignment.cut.ToolBox$StringTools:1000|return 0
+comp5111.assignment.cut.ToolBox$StringTools:1005|return 0
+comp5111.assignment.cut.ToolBox$StringTools:1004|return 1
+comp5111.assignment.cut.ToolBox$LocaleTools:169|$r9 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$StringTools:1003|if z6 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:1002|if z5 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:88|return 1
+comp5111.assignment.cut.ToolBox$LocaleTools:89|return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:86|$i1 = virtualinvoke r0.<java.lang.String: int length()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:87|if $i1 != 3 goto return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:84|$i0 = virtualinvoke r0.<java.lang.String: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:291|$c8 = r1[$i6]
+comp5111.assignment.cut.ToolBox$LocaleTools:85|if $i0 == 2 goto return 1
+comp5111.assignment.cut.ToolBox$StringTools:290|$i6 = i11 + 1
+comp5111.assignment.cut.ToolBox$LocaleTools:82|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isAllLowerCase(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$LocaleTools:170|$r10 = new java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$StringTools:282|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$LocaleTools:83|if $z0 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:171|specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid locale format: ")
+comp5111.assignment.cut.ToolBox$StringTools:281|i11 = 0
+comp5111.assignment.cut.ToolBox$StringTools:284|if $c5 != c4 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:283|$c5 = r1[i11]
+comp5111.assignment.cut.ToolBox$StringTools:286|if $z2 == 0 goto return 1
+comp5111.assignment.cut.ToolBox$StringTools:285|$z2 = staticinvoke <java.lang.Character: boolean isHighSurrogate(char)>(c4)
+comp5111.assignment.cut.ToolBox$StringTools:288|return 1
+comp5111.assignment.cut.ToolBox$StringTools:287|if i11 != i3 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:289|if i10 >= i2 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$LocaleTools:174|specialinvoke $r9.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r12)
+comp5111.assignment.cut.ToolBox$LocaleTools:175|throw $r9
+comp5111.assignment.cut.ToolBox$LocaleTools:172|$r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$LocaleTools:173|$r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:356|return $i2
+comp5111.assignment.cut.ToolBox$CharSequenceTools:598|$r5 = interfaceinvoke r0.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$RegExTools:197|return $r3
+comp5111.assignment.cut.ToolBox$CharSequenceTools:355|$i2 = virtualinvoke $r4.<java.lang.StringBuffer: int indexOf(java.lang.String,int)>($r5, i0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:597|$r4 = (java.lang.StringBuilder) r1
+comp5111.assignment.cut.ToolBox$LocaleTools:239|specialinvoke $r27.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r30)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:354|$r5 = interfaceinvoke r2.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:596|if $z3 == 0 goto $z4 = r1 instanceof java.lang.StringBuffer
+comp5111.assignment.cut.ToolBox$CharSequenceTools:353|$r4 = (java.lang.StringBuffer) r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:595|$z3 = r1 instanceof java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$RegExTools:194|if r2 != null goto $r3 = virtualinvoke r0.<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>(r1, r2)
+comp5111.assignment.cut.ToolBox$LocaleTools:237|$r29 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$RegExTools:193|if r1 == null goto return r0
+comp5111.assignment.cut.ToolBox$LocaleTools:238|$r30 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:359|$i1 = virtualinvoke $r1.<java.lang.String: int indexOf(java.lang.String,int)>($r3, i0)
+comp5111.assignment.cut.ToolBox$RegExTools:196|$r3 = virtualinvoke r0.<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>(r1, r2)
+comp5111.assignment.cut.ToolBox$LocaleTools:235|$r28 = new java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$CharSequenceTools:358|$r3 = interfaceinvoke r2.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$RegExTools:195|return r0
+comp5111.assignment.cut.ToolBox$LocaleTools:236|specialinvoke $r28.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid locale format: ")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:357|$r1 = interfaceinvoke r0.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:599|$i5 = virtualinvoke $r4.<java.lang.StringBuilder: int lastIndexOf(java.lang.String,int)>($r5, i10)
+comp5111.assignment.cut.ToolBox$ArrayTools:78|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:79|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:244|$r24 = new java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$LocaleTools:245|specialinvoke $r24.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid locale format: ")
+comp5111.assignment.cut.ToolBox$LocaleTools:242|if i0 >= 2 goto c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>(0)
+comp5111.assignment.cut.ToolBox$LocaleTools:243|$r23 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:240|throw $r27
+comp5111.assignment.cut.ToolBox$LocaleTools:241|i0 = virtualinvoke r0.<java.lang.String: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:360|return $i1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:345|$z1 = r0 instanceof java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$CharSequenceTools:587|return i10
+comp5111.assignment.cut.ToolBox$CharSequenceTools:344|return $i4
+comp5111.assignment.cut.ToolBox$CharSequenceTools:586|if i1 != 0 goto (branch)
+comp5111.assignment.cut.ToolBox$LocaleTools:228|if $z0 == 0 goto $z1 = virtualinvoke r0.<java.lang.String: boolean contains(java.lang.CharSequence)>("#")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:585|return -1
+comp5111.assignment.cut.ToolBox$LocaleTools:229|$r31 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$CharSequenceTools:342|$i4 = virtualinvoke $r8.<java.lang.String: int indexOf(java.lang.String,int)>($r9, i0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:584|if i1 <= i0 goto (branch)
+comp5111.assignment.cut.ToolBox$LocaleTools:226|return null
+comp5111.assignment.cut.ToolBox$CharSequenceTools:349|$i3 = virtualinvoke $r6.<java.lang.StringBuilder: int indexOf(java.lang.String,int)>($r7, i0)
+comp5111.assignment.cut.ToolBox$LocaleTools:227|$z0 = virtualinvoke r0.<java.lang.String: boolean isEmpty()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:348|$r7 = interfaceinvoke r2.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:347|$r6 = (java.lang.StringBuilder) r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:589|$z2 = r1 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$LocaleTools:225|if r0 != null goto $z0 = virtualinvoke r0.<java.lang.String: boolean isEmpty()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:346|if $z1 == 0 goto $z2 = r0 instanceof java.lang.StringBuffer
+comp5111.assignment.cut.ToolBox$CharSequenceTools:588|if i1 > 16 goto $i2 = i10 + i1
+comp5111.assignment.cut.ToolBox$LocaleTools:233|if $z1 == 0 goto i0 = virtualinvoke r0.<java.lang.String: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:590|if $z2 == 0 goto $z3 = r1 instanceof java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$LocaleTools:234|$r27 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:231|return $r31
+comp5111.assignment.cut.ToolBox$LocaleTools:232|$z1 = virtualinvoke r0.<java.lang.String: boolean contains(java.lang.CharSequence)>("#")
+comp5111.assignment.cut.ToolBox$StringTools:107|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:352|if $z2 == 0 goto $r1 = interfaceinvoke r0.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:594|return $i6
+comp5111.assignment.cut.ToolBox$StringTools:106|if r0 != r1 goto (branch)
+comp5111.assignment.cut.ToolBox$LocaleTools:230|specialinvoke $r31.<java.util.Locale: void <init>(java.lang.String,java.lang.String)>("", "")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:351|$z2 = r0 instanceof java.lang.StringBuffer
+comp5111.assignment.cut.ToolBox$CharSequenceTools:593|$i6 = virtualinvoke $r6.<java.lang.String: int lastIndexOf(java.lang.String,int)>($r7, i10)
+comp5111.assignment.cut.ToolBox$StringTools:109|if z0 == 0 goto $b1 = 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:350|return $i3
+comp5111.assignment.cut.ToolBox$CharSequenceTools:592|$r7 = interfaceinvoke r0.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$StringTools:108|if r0 != null goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:591|$r6 = (java.lang.String) r1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:378|r1[i2] = $c1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:377|$c1 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i2)
+comp5111.assignment.cut.ToolBox$ArrayTools:8|return
+comp5111.assignment.cut.ToolBox$CharSequenceTools:376|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:375|i2 = 0
+comp5111.assignment.cut.ToolBox$LocaleTools:259|throw $r19
+comp5111.assignment.cut.ToolBox$LocaleTools:257|$r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:258|specialinvoke $r19.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r22)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:379|i2 = i2 + 1
+comp5111.assignment.cut.ToolBox$ArrayTools:2|<comp5111.assignment.cut.ToolBox$ArrayTools: char[] EMPTY_CHAR_ARRAY> = $r0
+comp5111.assignment.cut.ToolBox$ArrayTools:1|$r0 = newarray (char)[0]
+comp5111.assignment.cut.ToolBox$StringTools:110|$b1 = -1
+comp5111.assignment.cut.ToolBox$StringTools:112|$b1 = 1
+comp5111.assignment.cut.ToolBox$StringTools:111|goto [?= return $b1]
+comp5111.assignment.cut.ToolBox$StringTools:114|if r1 != null goto $i0 = virtualinvoke r0.<java.lang.String: int compareTo(java.lang.String)>(r1)
+comp5111.assignment.cut.ToolBox$LocaleTools:266|$r2 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$CharSequenceTools:381|return r1
+comp5111.assignment.cut.ToolBox$StringTools:113|return $b1
+comp5111.assignment.cut.ToolBox$LocaleTools:267|$r3 = new java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$CharSequenceTools:380|if i2 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:377")
+comp5111.assignment.cut.ToolBox$StringTools:116|$b2 = 1
+comp5111.assignment.cut.ToolBox$LocaleTools:264|$z3 = staticinvoke <java.lang.Character: boolean isUpperCase(char)>(c3)
+comp5111.assignment.cut.ToolBox$StringTools:115|if z0 == 0 goto $b2 = -1
+comp5111.assignment.cut.ToolBox$LocaleTools:265|if $z3 != 0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:118|$b2 = -1
+comp5111.assignment.cut.ToolBox$LocaleTools:262|$z2 = staticinvoke <java.lang.Character: boolean isUpperCase(char)>(c2)
+comp5111.assignment.cut.ToolBox$StringTools:117|goto [?= return $b2]
+comp5111.assignment.cut.ToolBox$LocaleTools:263|if $z2 == 0 goto $r2 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:260|c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(1)
+comp5111.assignment.cut.ToolBox$StringTools:119|return $b2
+comp5111.assignment.cut.ToolBox$LocaleTools:261|c3 = virtualinvoke r0.<java.lang.String: char charAt(int)>(2)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:367|$r4 = <comp5111.assignment.cut.ToolBox$ArrayTools: char[] EMPTY_CHAR_ARRAY>
+comp5111.assignment.cut.ToolBox$CharSequenceTools:366|if i0 != 0 goto $z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$CharSequenceTools:365|i0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: int length(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$LocaleTools:248|specialinvoke $r23.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r26)
+comp5111.assignment.cut.ToolBox$LocaleTools:249|throw $r23
+comp5111.assignment.cut.ToolBox$LocaleTools:246|$r25 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:369|$z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$LocaleTools:247|$r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:368|return $r4
+comp5111.assignment.cut.ToolBox$StringTools:121|return $i0
+comp5111.assignment.cut.ToolBox$StringTools:120|$i0 = virtualinvoke r0.<java.lang.String: int compareTo(java.lang.String)>(r1)
+comp5111.assignment.cut.ToolBox$LocaleTools:255|specialinvoke $r20.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid locale format: ")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:370|if $z0 == 0 goto r1 = newarray (char)[i0]
+comp5111.assignment.cut.ToolBox$LocaleTools:256|$r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$RegExTools:192|if r0 == null goto return r0
+comp5111.assignment.cut.ToolBox$LocaleTools:253|$r19 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:254|$r20 = new java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$LocaleTools:251|if c1 != 95 goto $r1 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: java.util.Locale parseLocale(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:374|r1 = newarray (char)[i0]
+comp5111.assignment.cut.ToolBox$LocaleTools:252|if i0 >= 3 goto c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(1)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:373|return $r3
+comp5111.assignment.cut.ToolBox$CharSequenceTools:372|$r3 = virtualinvoke $r2.<java.lang.String: char[] toCharArray()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:250|c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>(0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:371|$r2 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$StringTools:539|return $r4
+comp5111.assignment.cut.ToolBox$CharSequenceTools:558|$z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$CharSequenceTools:557|return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:556|if r1 != null goto $z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$CharSequenceTools:555|if r0 == null goto return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:559|if $z0 == 0 goto i0 = interfaceinvoke r1.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:771|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:772|$r2 = r0[i13]
+comp5111.assignment.cut.ToolBox$StringTools:530|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: boolean isEmpty(java.lang.Object[])>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:770|i13 = 1
+comp5111.assignment.cut.ToolBox$StringTools:532|return ""
+comp5111.assignment.cut.ToolBox$StringTools:775|i10 = i11
+comp5111.assignment.cut.ToolBox$StringTools:531|if $z0 == 0 goto i0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: int indexOfDifference(java.lang.CharSequence[])>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:776|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:534|if i0 != -1 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:773|$c5 = interfaceinvoke $r2.<java.lang.CharSequence: char charAt(int)>(i11)
+comp5111.assignment.cut.ToolBox$StringTools:533|i0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: int indexOfDifference(java.lang.CharSequence[])>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:774|if $c5 == c12 goto i13 = i13 + 1
+comp5111.assignment.cut.ToolBox$StringTools:536|if $r3 != null goto $r4 = r0[0]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:561|if $z5 == 0 goto $z6 = r1 instanceof java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$StringTools:779|if i10 == -1 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:535|$r3 = r0[0]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:560|$z5 = r1 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$StringTools:538|$r4 = r0[0]
+comp5111.assignment.cut.ToolBox$StringTools:777|i13 = i13 + 1
+comp5111.assignment.cut.ToolBox$StringTools:537|return ""
+comp5111.assignment.cut.ToolBox$StringTools:778|if i13 < i2 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:772")
+comp5111.assignment.cut.ToolBox$ArrayTools:198|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:782|if i11 < i6 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:768")
+comp5111.assignment.cut.ToolBox$ArrayTools:199|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:783|if i10 != -1 goto return i10
+comp5111.assignment.cut.ToolBox$StringTools:541|return ""
+comp5111.assignment.cut.ToolBox$StringTools:780|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:540|if i0 != 0 goto $r1 = r0[0]
+comp5111.assignment.cut.ToolBox$StringTools:781|i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:301|return 0
+comp5111.assignment.cut.ToolBox$StringTools:543|$r2 = virtualinvoke $r1.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+comp5111.assignment.cut.ToolBox$StringTools:786|return i10
+comp5111.assignment.cut.ToolBox$StringTools:300|if i10 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:280")
+comp5111.assignment.cut.ToolBox$StringTools:542|$r1 = r0[0]
+comp5111.assignment.cut.ToolBox$StringTools:787|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:545|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:784|if i6 == i7 goto return i10
+comp5111.assignment.cut.ToolBox$StringTools:544|return $r2
+comp5111.assignment.cut.ToolBox$StringTools:785|return i6
+comp5111.assignment.cut.ToolBox$StringTools:547|if r1 != null goto $r2 = interfaceinvoke r1.<java.util.function.Supplier: java.lang.Object get()>()
+comp5111.assignment.cut.ToolBox$StringTools:546|if $z0 == 0 goto $r3 = r0
+comp5111.assignment.cut.ToolBox$StringTools:549|goto [?= return $r3]
+comp5111.assignment.cut.ToolBox$StringTools:788|if $z0 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:548|$r3 = null
+comp5111.assignment.cut.ToolBox$StringTools:789|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:576|$i7 = virtualinvoke $r9.<java.lang.StringBuffer: int lastIndexOf(java.lang.String,int)>($r8, i10)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:333|$z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$CharSequenceTools:575|$r8 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:574|$r9 = (java.lang.StringBuffer) r1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:573|if $z7 == 0 goto i0 = interfaceinvoke r1.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:337|$r8 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:579|i1 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:578|i0 = interfaceinvoke r1.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:335|if $z0 == 0 goto $z1 = r0 instanceof java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$CharSequenceTools:577|return $i7
+comp5111.assignment.cut.ToolBox$ArrayTools:96|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:97|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:339|$r9 = interfaceinvoke r2.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$ArrayTools:98|return 1
+comp5111.assignment.cut.ToolBox$ArrayTools:99|return 0
+comp5111.assignment.cut.ToolBox$StringTools:790|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:550|$r2 = interfaceinvoke r1.<java.util.function.Supplier: java.lang.Object get()>()
+comp5111.assignment.cut.ToolBox$StringTools:793|$c1 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i2)
+comp5111.assignment.cut.ToolBox$StringTools:794|$z1 = staticinvoke <java.lang.Character: boolean isDigit(char)>($c1)
+comp5111.assignment.cut.ToolBox$StringTools:552|goto [?= return $r3]
+comp5111.assignment.cut.ToolBox$StringTools:791|i2 = 0
+comp5111.assignment.cut.ToolBox$StringTools:551|$r3 = (java.lang.CharSequence) $r2
+comp5111.assignment.cut.ToolBox$StringTools:792|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:554|return $r3
+comp5111.assignment.cut.ToolBox$StringTools:797|i2 = i2 + 1
+comp5111.assignment.cut.ToolBox$StringTools:553|$r3 = r0
+comp5111.assignment.cut.ToolBox$StringTools:798|if i2 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:793")
+comp5111.assignment.cut.ToolBox$StringTools:795|if $z1 != 0 goto i2 = i2 + 1
+comp5111.assignment.cut.ToolBox$StringTools:796|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:583|if i1 < 0 goto return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:582|if i10 < 0 goto return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:581|i10 = i0
+comp5111.assignment.cut.ToolBox$StringTools:799|return 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:580|if i10 <= i0 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:565|return $i9
+comp5111.assignment.cut.ToolBox$CharSequenceTools:564|$i9 = virtualinvoke $r13.<java.lang.String: int lastIndexOf(java.lang.String,int)>($r12, i10)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:563|$r12 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:562|$r13 = (java.lang.String) r1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:569|$r10 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$ArrayTools:80|return 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:568|$r11 = (java.lang.StringBuilder) r1
+comp5111.assignment.cut.ToolBox$ArrayTools:81|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:567|if $z6 == 0 goto $z7 = r1 instanceof java.lang.StringBuffer
+comp5111.assignment.cut.ToolBox$CharSequenceTools:566|$z6 = r1 instanceof java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$CharSequenceTools:15|return
+comp5111.assignment.cut.ToolBox$CharSequenceTools:572|$z7 = r1 instanceof java.lang.StringBuffer
+comp5111.assignment.cut.ToolBox$CharSequenceTools:12|specialinvoke r0.<java.lang.Object: void <init>()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:571|return $i8
+comp5111.assignment.cut.ToolBox$CharSequenceTools:570|$i8 = virtualinvoke $r11.<java.lang.StringBuilder: int lastIndexOf(java.lang.String,int)>($r10, i10)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:64|i11 = i9
+comp5111.assignment.cut.ToolBox$CharSequenceTools:510|i12 = i10
+comp5111.assignment.cut.ToolBox$StringTools:739|z1 = 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:63|r2 = staticinvoke <java.lang.Character: char[] toChars(int)>(i1)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:62|if i1 > 1114111 goto return -1
+comp5111.assignment.cut.ToolBox$StringTools:737|return -1
+comp5111.assignment.cut.ToolBox$StringTools:979|if z3 == 0 goto return z6
+comp5111.assignment.cut.ToolBox$CharSequenceTools:61|return -1
+comp5111.assignment.cut.ToolBox$StringTools:738|z0 = 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:60|if i10 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:55")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:513|c3 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i12)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:512|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:518|$c6 = r2[0]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:516|c5 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i4)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:515|$i4 = i12 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:519|if $c6 != c3 goto i12 = i12 + -1
+comp5111.assignment.cut.ToolBox$StringTools:970|return 1
+comp5111.assignment.cut.ToolBox$StringTools:731|return i7
+comp5111.assignment.cut.ToolBox$StringTools:973|$c13 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:732|i7 = i7 + 1
+comp5111.assignment.cut.ToolBox$StringTools:974|if $c13 != 69 goto $c14 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:971|$c12 = r1[i45]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:69|$c5 = r2[0]
+comp5111.assignment.cut.ToolBox$StringTools:730|if z2 != 0 goto i7 = i7 + 1
+comp5111.assignment.cut.ToolBox$StringTools:972|if $c12 == 101 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:68|c4 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i3)
+comp5111.assignment.cut.ToolBox$StringTools:735|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:977|if $c14 != 46 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:67|$i3 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:736|if $i0 > 1 goto z0 = 0
+comp5111.assignment.cut.ToolBox$StringTools:978|if z4 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:66|c2 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i11)
+comp5111.assignment.cut.ToolBox$StringTools:733|if i7 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:713")
+comp5111.assignment.cut.ToolBox$StringTools:975|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:65|goto [?= $i12 = i0 - 1]
+comp5111.assignment.cut.ToolBox$StringTools:734|return -1
+comp5111.assignment.cut.ToolBox$StringTools:976|$c14 = r1[i45]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:75|$i12 = i0 - 1
+comp5111.assignment.cut.ToolBox$StringTools:507|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:74|i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:73|return i11
+comp5111.assignment.cut.ToolBox$StringTools:509|$c3 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i5)
+comp5111.assignment.cut.ToolBox$StringTools:748|if r4 != null goto z1 = 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:72|if c4 != $c6 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:749|z0 = 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:71|$c6 = r2[1]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:70|if c2 != $c5 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:502|if i1 > 1114111 goto return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:500|return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:507|if i10 != $i2 goto i12 = i10
+comp5111.assignment.cut.ToolBox$CharSequenceTools:506|$i2 = i0 - 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:504|r2 = staticinvoke <java.lang.Character: char[] toChars(int)>(i1)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:509|return -1
+comp5111.assignment.cut.ToolBox$ArrayTools:394|return $i0
+comp5111.assignment.cut.ToolBox$ArrayTools:393|$i0 = staticinvoke <java.lang.reflect.Array: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:980|return 0
+comp5111.assignment.cut.ToolBox$StringTools:981|return z6
+comp5111.assignment.cut.ToolBox$StringTools:742|i6 = 2147483647
+comp5111.assignment.cut.ToolBox$StringTools:984|if $c17 == 100 goto return z6
+comp5111.assignment.cut.ToolBox$StringTools:743|i7 = 0
+comp5111.assignment.cut.ToolBox$StringTools:985|$c18 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:501|return $z2
+comp5111.assignment.cut.ToolBox$StringTools:740|$i1 = lengthof r0
+comp5111.assignment.cut.ToolBox$StringTools:982|if z5 != 0 goto $c15 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:741|i2 = $i1 - 1
+comp5111.assignment.cut.ToolBox$StringTools:983|$c17 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:746|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:988|if $c19 == 102 goto return z6
+comp5111.assignment.cut.ToolBox$StringTools:502|i2 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:747|r4 = r0[i9]
+comp5111.assignment.cut.ToolBox$StringTools:989|$c20 = r1[i45]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:77|return -1
+comp5111.assignment.cut.ToolBox$StringTools:505|i5 = 0
+comp5111.assignment.cut.ToolBox$StringTools:744|i8 = lengthof r0
+comp5111.assignment.cut.ToolBox$StringTools:986|if $c18 == 68 goto return z6
+comp5111.assignment.cut.ToolBox$CharSequenceTools:76|if i11 < $i12 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:66")
+comp5111.assignment.cut.ToolBox$StringTools:745|i9 = 0
+comp5111.assignment.cut.ToolBox$StringTools:987|$c19 = r1[i45]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:42|$z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$StringTools:518|return 0
+comp5111.assignment.cut.ToolBox$StringTools:759|if z1 != 0 goto return -1
+comp5111.assignment.cut.ToolBox$StringTools:991|return z6
+comp5111.assignment.cut.ToolBox$StringTools:750|i6 = 0
+comp5111.assignment.cut.ToolBox$StringTools:992|$c15 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:990|if $c20 != 70 goto $c15 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:753|$i3 = interfaceinvoke r4.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:995|if $c16 != 76 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:49|i9 = 0
+comp5111.assignment.cut.ToolBox$StringTools:754|i6 = staticinvoke <java.lang.Math: int min(int,int)>($i3, i6)
+comp5111.assignment.cut.ToolBox$StringTools:996|if z6 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:48|if i9 >= 0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:512|$c4 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>(i5)
+comp5111.assignment.cut.ToolBox$StringTools:751|goto [?= i9 = i9 + 1]
+comp5111.assignment.cut.ToolBox$StringTools:993|if $c15 == 108 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:47|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:752|z1 = 0
+comp5111.assignment.cut.ToolBox$StringTools:994|$c16 = r1[i45]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:46|return $i8
+comp5111.assignment.cut.ToolBox$StringTools:757|i9 = i9 + 1
+comp5111.assignment.cut.ToolBox$StringTools:999|return 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:45|$i8 = virtualinvoke $r1.<java.lang.String: int indexOf(int,int)>(i1, i9)
+comp5111.assignment.cut.ToolBox$StringTools:758|if i9 < i8 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:747")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:44|$r1 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$StringTools:755|$i4 = interfaceinvoke r4.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:997|if z3 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:43|if $z0 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:515|if $c3 == $c4 goto i5 = i5 + 1
+comp5111.assignment.cut.ToolBox$StringTools:756|i7 = staticinvoke <java.lang.Math: int max(int,int)>($i4, i7)
+comp5111.assignment.cut.ToolBox$StringTools:998|if z4 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:521|$c7 = r2[1]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:52|i10 = i9
+comp5111.assignment.cut.ToolBox$CharSequenceTools:50|if i1 >= 65536 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:525|return i12
+comp5111.assignment.cut.ToolBox$CharSequenceTools:524|if $c7 != c5 goto i12 = i12 + -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:529|return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:527|if i12 >= 0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:513")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:526|i12 = i12 + -1
+comp5111.assignment.cut.ToolBox$StringTools:760|if i7 != 0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:761|if z0 != 0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:521|i5 = i5 + 1
+comp5111.assignment.cut.ToolBox$StringTools:764|return 0
+comp5111.assignment.cut.ToolBox$StringTools:765|i10 = -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:59|i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:762|return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:58|return i10
+comp5111.assignment.cut.ToolBox$StringTools:522|if i5 < i2 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:509")
+comp5111.assignment.cut.ToolBox$StringTools:763|if i6 != 0 goto i10 = -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:57|if $c7 != i1 goto i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:768|$r1 = r0[0]
+comp5111.assignment.cut.ToolBox$StringTools:769|c12 = interfaceinvoke $r1.<java.lang.CharSequence: char charAt(int)>(i11)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:55|$c7 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i10)
+comp5111.assignment.cut.ToolBox$StringTools:527|return 1
+comp5111.assignment.cut.ToolBox$StringTools:766|i11 = 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:54|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:767|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:937|$c5 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:938|if $c5 == 101 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:935|z4 = 1
+comp5111.assignment.cut.ToolBox$StringTools:936|goto [?= i45 = i45 + 1]
+comp5111.assignment.cut.ToolBox$StringTools:939|$c6 = r1[i45]
+comp5111.assignment.cut.ToolBox$ArrayTools:361|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:363|return 1
+comp5111.assignment.cut.ToolBox$ArrayTools:362|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:364|return 0
+comp5111.assignment.cut.ToolBox$StringTools:930|$c4 = r1[i45]
+comp5111.assignment.cut.ToolBox$ArrayTools:129|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:933|if z3 == 0 goto z4 = 1
+comp5111.assignment.cut.ToolBox$StringTools:934|return 0
+comp5111.assignment.cut.ToolBox$StringTools:931|if $c4 != 46 goto $c5 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:932|if z4 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:706|if $z0 != 0 goto return -1
+comp5111.assignment.cut.ToolBox$StringTools:948|$c7 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:707|$z1 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r1)
+comp5111.assignment.cut.ToolBox$StringTools:949|if $c7 == 43 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:704|return -1
+comp5111.assignment.cut.ToolBox$StringTools:946|z5 = 1
+comp5111.assignment.cut.ToolBox$StringTools:705|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:947|goto [?= i45 = i45 + 1]
+comp5111.assignment.cut.ToolBox$StringTools:708|if $z1 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:709|return -1
+comp5111.assignment.cut.ToolBox$StringTools:940|if $c6 != 69 goto $c7 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:941|if z3 == 0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:702|i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:944|return 0
+comp5111.assignment.cut.ToolBox$StringTools:703|if i10 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:684")
+comp5111.assignment.cut.ToolBox$StringTools:945|z3 = 1
+comp5111.assignment.cut.ToolBox$StringTools:700|if i11 < i2 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:687")
+comp5111.assignment.cut.ToolBox$StringTools:942|return 0
+comp5111.assignment.cut.ToolBox$StringTools:701|return i10
+comp5111.assignment.cut.ToolBox$StringTools:943|if z6 != 0 goto z3 = 1
+comp5111.assignment.cut.ToolBox$StringTools:717|goto [?= z2 = $z4]
+comp5111.assignment.cut.ToolBox$StringTools:959|if i45 < i44 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:923")
+comp5111.assignment.cut.ToolBox$StringTools:718|$z4 = 0
+comp5111.assignment.cut.ToolBox$StringTools:715|if $i2 < 0 goto $z4 = 0
+comp5111.assignment.cut.ToolBox$StringTools:957|return 0
+comp5111.assignment.cut.ToolBox$StringTools:716|$z4 = 1
+comp5111.assignment.cut.ToolBox$StringTools:958|i45 = i45 + 1
+comp5111.assignment.cut.ToolBox$StringTools:719|z2 = $z4
+comp5111.assignment.cut.ToolBox$ArrayTools:383|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:382|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:385|return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:384|return 1
+comp5111.assignment.cut.ToolBox$ArrayTools:386|if r0 != null goto $i0 = staticinvoke <java.lang.reflect.Array: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:389|return 0
+comp5111.assignment.cut.ToolBox$StringTools:951|if $c8 != 45 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:710|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:952|if z5 != 0 goto z5 = 0
+comp5111.assignment.cut.ToolBox$StringTools:950|$c8 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:713|c1 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i7)
+comp5111.assignment.cut.ToolBox$StringTools:955|z6 = 0
+comp5111.assignment.cut.ToolBox$StringTools:714|$i2 = staticinvoke <comp5111.assignment.cut.ToolBox$CharSequenceTools: int indexOf(java.lang.CharSequence,int,int)>(r1, c1, 0)
+comp5111.assignment.cut.ToolBox$StringTools:956|goto [?= i45 = i45 + 1]
+comp5111.assignment.cut.ToolBox$StringTools:711|i7 = 0
+comp5111.assignment.cut.ToolBox$StringTools:953|return 0
+comp5111.assignment.cut.ToolBox$StringTools:712|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:954|z5 = 0
+comp5111.assignment.cut.ToolBox$StringTools:728|if $i6 >= 0 goto i7 = i7 + 1
+comp5111.assignment.cut.ToolBox$StringTools:729|return i7
+comp5111.assignment.cut.ToolBox$StringTools:726|if $z4 == 0 goto i7 = i7 + 1
+comp5111.assignment.cut.ToolBox$StringTools:968|$c21 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:727|$i6 = staticinvoke <comp5111.assignment.cut.ToolBox$CharSequenceTools: int indexOf(java.lang.CharSequence,int,int)>(r1, c5, 0)
+comp5111.assignment.cut.ToolBox$StringTools:969|if $c21 > 57 goto $c12 = r1[i45]
+comp5111.assignment.cut.ToolBox$CharTools:9|<comp5111.assignment.cut.ToolBox$CharTools: java.lang.String[] CHAR_STRING_ARRAY> = $r0
+comp5111.assignment.cut.ToolBox$CharTools:7|$r0 = newarray (java.lang.String)[128]
+comp5111.assignment.cut.ToolBox$ArrayTools:130|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:132|return 0
+comp5111.assignment.cut.ToolBox$ArrayTools:131|return 1
+comp5111.assignment.cut.ToolBox$StringTools:720|$i3 = i7 + 1
+comp5111.assignment.cut.ToolBox$StringTools:962|if z5 == 0 goto $i46 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:721|if $i3 >= i0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:963|if z6 == 0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:923")
+comp5111.assignment.cut.ToolBox$StringTools:960|$i10 = i44 + 1
+comp5111.assignment.cut.ToolBox$StringTools:961|if i45 >= $i10 goto $i46 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:724|$i4 = i7 + 1
+comp5111.assignment.cut.ToolBox$StringTools:966|$c11 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:725|c5 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i4)
+comp5111.assignment.cut.ToolBox$StringTools:967|if $c11 < 48 goto $c12 = r1[i45]
+comp5111.assignment.cut.ToolBox$StringTools:722|$z3 = staticinvoke <java.lang.Character: boolean isHighSurrogate(char)>(c1)
+comp5111.assignment.cut.ToolBox$StringTools:964|$i46 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:723|if $z3 == 0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:965|if i45 >= $i46 goto (branch)
+comp5111.assignment.cut.ToolBox$CharTools:41|return
+comp5111.assignment.cut.ToolBox$StringTools:805|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:806|$c1 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i2)
+comp5111.assignment.cut.ToolBox$StringTools:803|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:804|i2 = 0
+comp5111.assignment.cut.ToolBox$StringTools:809|return 0
+comp5111.assignment.cut.ToolBox$StringTools:807|$z1 = staticinvoke <java.lang.Character: boolean isLowerCase(char)>($c1)
+comp5111.assignment.cut.ToolBox$StringTools:808|if $z1 != 0 goto i2 = i2 + 1
+comp5111.assignment.cut.ToolBox$CharTools:38|specialinvoke r0.<java.lang.Object: void <init>()>()
+comp5111.assignment.cut.ToolBox$StringTools:801|if $z0 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:802|return 0
+comp5111.assignment.cut.ToolBox$StringTools:800|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:302|$i0 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: int getLength(java.lang.Object)>(r0)
+comp5111.assignment.cut.ToolBox$ArrayTools:304|if $i0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:2|return
+comp5111.assignment.cut.ToolBox$StringTools:1|specialinvoke r0.<java.lang.Object: void <init>()>()
+comp5111.assignment.cut.ToolBox$ArrayTools:306|return 1
+comp5111.assignment.cut.ToolBox$ArrayTools:308|return 0
+comp5111.assignment.cut.ToolBox$StringTools:181|goto [?= return $b1]
+comp5111.assignment.cut.ToolBox$StringTools:180|$b1 = -1
+comp5111.assignment.cut.ToolBox$StringTools:176|if r0 != r1 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:178|if r0 != null goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:177|return 0
+comp5111.assignment.cut.ToolBox$StringTools:179|if z0 == 0 goto $b1 = 1
+comp5111.assignment.cut.ToolBox$StringTools:50|if r0 != null goto $i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:56|return $i0
+comp5111.assignment.cut.ToolBox$StringTools:55|$i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:190|$i0 = virtualinvoke r0.<java.lang.String: int compareToIgnoreCase(java.lang.String)>(r1)
+comp5111.assignment.cut.ToolBox$StringTools:54|goto [?= return $i0]
+comp5111.assignment.cut.ToolBox$StringTools:52|$i0 = 0
+comp5111.assignment.cut.ToolBox$StringTools:191|return $i0
+comp5111.assignment.cut.ToolBox$StringTools:183|return $b1
+comp5111.assignment.cut.ToolBox$StringTools:182|$b1 = 1
+comp5111.assignment.cut.ToolBox$StringTools:185|if z0 == 0 goto $b2 = -1
+comp5111.assignment.cut.ToolBox$StringTools:184|if r1 != null goto $i0 = virtualinvoke r0.<java.lang.String: int compareToIgnoreCase(java.lang.String)>(r1)
+comp5111.assignment.cut.ToolBox$StringTools:187|goto [?= return $b2]
+comp5111.assignment.cut.ToolBox$StringTools:186|$b2 = 1
+comp5111.assignment.cut.ToolBox$StringTools:189|return $b2
+comp5111.assignment.cut.ToolBox$StringTools:188|$b2 = -1
+comp5111.assignment.cut.ToolBox$CharTools:21|$r1 = <comp5111.assignment.cut.ToolBox$CharTools: java.lang.String[] CHAR_STRING_ARRAY>
+comp5111.assignment.cut.ToolBox$CharTools:20|c2 = (char) $i1
+comp5111.assignment.cut.ToolBox$ArrayTools:26|specialinvoke r0.<java.lang.Object: void <init>()>()
+comp5111.assignment.cut.ToolBox$ArrayTools:28|return
+comp5111.assignment.cut.ToolBox$CharTools:23|if c2 < $i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharTools", "comp5111.assignment.cut.ToolBox$CharTools:15")
+comp5111.assignment.cut.ToolBox$CharTools:22|$i0 = lengthof $r1
+comp5111.assignment.cut.ToolBox$CharTools:24|return
+comp5111.assignment.cut.ToolBox$CharTools:10|c2 = 0
+comp5111.assignment.cut.ToolBox$LocaleTools:268|specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid locale format: ")
+comp5111.assignment.cut.ToolBox$RegExTools:206|$r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String,int)>(r1, 32)
+comp5111.assignment.cut.ToolBox$RegExTools:205|return r0
+comp5111.assignment.cut.ToolBox$RegExTools:208|$r5 = virtualinvoke $r4.<java.util.regex.Matcher: java.lang.String replaceAll(java.lang.String)>(r2)
+comp5111.assignment.cut.ToolBox$RegExTools:207|$r4 = virtualinvoke $r3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$RegExTools:202|if r0 == null goto return r0
+comp5111.assignment.cut.ToolBox$RegExTools:204|if r2 != null goto $r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String,int)>(r1, 32)
+comp5111.assignment.cut.ToolBox$RegExTools:203|if r1 == null goto return r0
+comp5111.assignment.cut.ToolBox$CharTools:19|$i1 = c2 + 1
+comp5111.assignment.cut.ToolBox$RegExTools:209|return $r5
+comp5111.assignment.cut.ToolBox$StringTools:386|if r0 != null goto $r2 = staticinvoke <comp5111.assignment.cut.ToolBox$CharSequenceTools: char[] toCharArray(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:389|$r2 = staticinvoke <comp5111.assignment.cut.ToolBox$CharSequenceTools: char[] toCharArray(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$CharTools:15|$r2 = <comp5111.assignment.cut.ToolBox$CharTools: java.lang.String[] CHAR_STRING_ARRAY>
+comp5111.assignment.cut.ToolBox$StringTools:388|return 0
+comp5111.assignment.cut.ToolBox$CharTools:18|$r2[c2] = $r3
+comp5111.assignment.cut.ToolBox$CharTools:17|$r3 = staticinvoke <java.lang.String: java.lang.String valueOf(char)>(c2)
+comp5111.assignment.cut.ToolBox$CharTools:14|goto [?= $r1 = <comp5111.assignment.cut.ToolBox$CharTools: java.lang.String[] CHAR_STRING_ARRAY>]
+comp5111.assignment.cut.ToolBox$StringTools:392|return $z0
+comp5111.assignment.cut.ToolBox$StringTools:391|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean containsAny(java.lang.CharSequence,char[])>(r1, $r2)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:477|return $i9
+comp5111.assignment.cut.ToolBox$CharSequenceTools:476|$i9 = virtualinvoke $r1.<java.lang.String: int lastIndexOf(int,int)>(i1, i10)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:475|$r1 = (java.lang.String) r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:474|if $z0 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:478|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:691|$z2 = staticinvoke <java.lang.Character: boolean isHighSurrogate(char)>(c4)
+comp5111.assignment.cut.ToolBox$StringTools:690|if i11 >= i3 goto i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:693|$i6 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:450|if $z0 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:692|if $z2 == 0 goto i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:211|if $z0 == 0 goto $i1 = staticinvoke <comp5111.assignment.cut.ToolBox$CharSequenceTools: int indexOf(java.lang.CharSequence,int,int)>(r0, i0, 0)
+comp5111.assignment.cut.ToolBox$StringTools:453|return 0
+comp5111.assignment.cut.ToolBox$StringTools:695|$i7 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:210|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:452|if i11 != i3 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:694|$c8 = r1[$i6]
+comp5111.assignment.cut.ToolBox$StringTools:213|$i1 = staticinvoke <comp5111.assignment.cut.ToolBox$CharSequenceTools: int indexOf(java.lang.CharSequence,int,int)>(r0, i0, 0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:480|if i10 >= 0 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:697|if $c8 != $c9 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:212|return 0
+comp5111.assignment.cut.ToolBox$StringTools:454|if i10 >= i1 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:696|$c9 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i7)
+comp5111.assignment.cut.ToolBox$StringTools:215|return 1
+comp5111.assignment.cut.ToolBox$StringTools:457|$c8 = r1[$i6]
+comp5111.assignment.cut.ToolBox$StringTools:699|i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:214|if $i1 < 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:456|$i6 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:698|goto [?= i10 = i10 + 1]
+comp5111.assignment.cut.ToolBox$StringTools:459|$c9 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i7)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:484|i10 = i0 - 1
+comp5111.assignment.cut.ToolBox$StringTools:216|return 0
+comp5111.assignment.cut.ToolBox$StringTools:458|$i7 = i10 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:482|if i10 < i0 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:481|return -1
+comp5111.assignment.cut.ToolBox$LocaleTools:105|return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:103|if $i0 != 3 goto return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:104|return 1
+comp5111.assignment.cut.ToolBox$StringTools:460|if $c8 != $c9 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:462|return 0
+comp5111.assignment.cut.ToolBox$StringTools:461|return 0
+comp5111.assignment.cut.ToolBox$StringTools:464|if i11 < i2 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:446")
+comp5111.assignment.cut.ToolBox$StringTools:463|i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$RegExTools:94|$r3 = virtualinvoke r0.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>(r1, r2)
+comp5111.assignment.cut.ToolBox$StringTools:466|if i10 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:441")
+comp5111.assignment.cut.ToolBox$RegExTools:95|return $r3
+comp5111.assignment.cut.ToolBox$StringTools:465|i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$RegExTools:92|if r2 != null goto $r3 = virtualinvoke r0.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>(r1, r2)
+comp5111.assignment.cut.ToolBox$StringTools:468|if r0 != r1 goto (branch)
+comp5111.assignment.cut.ToolBox$RegExTools:93|return r0
+comp5111.assignment.cut.ToolBox$StringTools:467|return 1
+comp5111.assignment.cut.ToolBox$RegExTools:90|if r0 == null goto return r0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:473|$z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$RegExTools:91|if r1 == null goto return r0
+comp5111.assignment.cut.ToolBox$StringTools:469|return 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:496|if i11 >= 0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:490")
+comp5111.assignment.cut.ToolBox$LocaleTools:138|r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String,int)>("_", -1)
+comp5111.assignment.cut.ToolBox$LocaleTools:139|r2 = r1[0]
+comp5111.assignment.cut.ToolBox$LocaleTools:136|specialinvoke $r6.<java.util.Locale: void <init>(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$LocaleTools:137|return $r6
+comp5111.assignment.cut.ToolBox$StringTools:471|if r1 != null goto $i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:470|if r0 == null goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:473|$i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:472|return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:145|$z7 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isISO3166CountryCode(java.lang.String)>(r7)
+comp5111.assignment.cut.ToolBox$LocaleTools:146|if $z7 != 0 goto $r5 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$LocaleTools:143|$z5 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isISO639LanguageCode(java.lang.String)>(r2)
+comp5111.assignment.cut.ToolBox$LocaleTools:144|if $z5 == 0 goto $z6 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isNumericAreaCode(java.lang.String)>(r7)
+comp5111.assignment.cut.ToolBox$LocaleTools:141|if $i0 != 2 goto $i1 = lengthof r1
+comp5111.assignment.cut.ToolBox$LocaleTools:142|r7 = r1[1]
+comp5111.assignment.cut.ToolBox$LocaleTools:140|$i0 = lengthof r1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:487|i11 = i10
+comp5111.assignment.cut.ToolBox$CharSequenceTools:486|if i1 >= 65536 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:489|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:481|$i1 = interfaceinvoke r1.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:484|if $i0 == $i1 goto $z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$LocaleTools:134|if $z0 == 0 goto r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String,int)>("_", -1)
+comp5111.assignment.cut.ToolBox$LocaleTools:135|$r6 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$StringTools:487|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:490|$c8 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i11)
+comp5111.assignment.cut.ToolBox$LocaleTools:133|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: boolean isISO639LanguageCode(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:489|$z0 = r0 instanceof java.lang.String
+comp5111.assignment.cut.ToolBox$CharSequenceTools:495|i11 = i11 + -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:494|return i11
+comp5111.assignment.cut.ToolBox$CharSequenceTools:492|if $c8 != i1 goto i11 = i11 + -1
+comp5111.assignment.cut.ToolBox$LocaleTools:318|specialinvoke $r14.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid locale format: ")
+comp5111.assignment.cut.ToolBox$LocaleTools:319|$r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:432|if c11 == c12 goto $i18 = i17
+comp5111.assignment.cut.ToolBox$LocaleTools:316|$r13 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$LocaleTools:317|$r14 = new java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$CharSequenceTools:430|c12 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c10)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:672|return 1
+comp5111.assignment.cut.ToolBox$LocaleTools:314|return $r17
+comp5111.assignment.cut.ToolBox$LocaleTools:315|if i0 >= 5 goto $c4 = virtualinvoke r0.<java.lang.String: char charAt(int)>(3)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:436|$c14 = staticinvoke <java.lang.Character: char toLowerCase(char)>(c12)
+comp5111.assignment.cut.ToolBox$LocaleTools:312|$r18 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(1, 3)
+comp5111.assignment.cut.ToolBox$LocaleTools:313|specialinvoke $r17.<java.util.Locale: void <init>(java.lang.String,java.lang.String)>("", $r18)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:434|$c13 = staticinvoke <java.lang.Character: char toLowerCase(char)>(c11)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:438|if $c13 == $c14 goto $i18 = i17
+comp5111.assignment.cut.ToolBox$StringTools:892|$c26 = r1[i41]
+comp5111.assignment.cut.ToolBox$StringTools:893|if $c26 < 97 goto $c27 = r1[i41]
+comp5111.assignment.cut.ToolBox$StringTools:651|return i10
+comp5111.assignment.cut.ToolBox$StringTools:890|$c30 = r1[i41]
+comp5111.assignment.cut.ToolBox$StringTools:650|return i10
+comp5111.assignment.cut.ToolBox$StringTools:891|if $c30 <= 57 goto i41 = i41 + 1
+comp5111.assignment.cut.ToolBox$LocaleTools:321|specialinvoke $r13.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r16)
+comp5111.assignment.cut.ToolBox$StringTools:653|if i11 < i2 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:639")
+comp5111.assignment.cut.ToolBox$StringTools:896|$c27 = r1[i41]
+comp5111.assignment.cut.ToolBox$LocaleTools:322|throw $r13
+comp5111.assignment.cut.ToolBox$StringTools:652|i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:897|if $c27 < 65 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:655|if i10 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:636")
+comp5111.assignment.cut.ToolBox$StringTools:894|$c29 = r1[i41]
+comp5111.assignment.cut.ToolBox$LocaleTools:320|$r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$StringTools:654|i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:895|if $c29 <= 102 goto i41 = i41 + 1
+comp5111.assignment.cut.ToolBox$StringTools:656|return -1
+comp5111.assignment.cut.ToolBox$StringTools:898|$c28 = r1[i41]
+comp5111.assignment.cut.ToolBox$StringTools:899|if $c28 <= 70 goto i41 = i41 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:422|c10 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>($i9)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:664|$i5 = i1 + i9
+comp5111.assignment.cut.ToolBox$LocaleTools:308|throw $r2
+comp5111.assignment.cut.ToolBox$CharSequenceTools:421|i16 = i16 + 1
+comp5111.assignment.cut.ToolBox$StringTools:429|return 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:663|if $c3 != $c4 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:420|$i9 = i16
+comp5111.assignment.cut.ToolBox$CharSequenceTools:662|$c4 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>(i8)
+comp5111.assignment.cut.ToolBox$LocaleTools:306|specialinvoke $r2.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r5)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:661|$c3 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i2)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:426|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:668|return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:304|$r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:425|if z1 != 0 goto c11 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c8)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:667|if $c6 == $c7 goto i8 = i8 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:424|goto [?= $i18 = i17]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:666|$c7 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>(i9)
+comp5111.assignment.cut.ToolBox$LocaleTools:302|$r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:423|if c8 != c10 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:665|$c6 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i5)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:428|c11 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c8)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:669|i8 = i8 + 1
+comp5111.assignment.cut.ToolBox$LocaleTools:309|if i0 != 3 goto (branch)
+comp5111.assignment.cut.ToolBox$LocaleTools:311|$r17 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$StringTools:426|if r1 != null goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:671|if i8 <= i9 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:660")
+comp5111.assignment.cut.ToolBox$StringTools:425|if r0 == null goto return 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:670|i9 = i9 + -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:455|return 1
+comp5111.assignment.cut.ToolBox$LocaleTools:339|return $r6
+comp5111.assignment.cut.ToolBox$LocaleTools:337|specialinvoke $r6.<java.util.Locale: void <init>(java.lang.String,java.lang.String,java.lang.String)>("", $r7, $r8)
+comp5111.assignment.cut.ToolBox$LocaleTools:335|$r8 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int)>(4)
+comp5111.assignment.cut.ToolBox$StringTools:673|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:430|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$LocaleTools:101|if $z0 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:675|$z1 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: boolean isEmpty(char[])>(r1)
+comp5111.assignment.cut.ToolBox$LocaleTools:102|$i0 = virtualinvoke r0.<java.lang.String: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:432|i1 = i0 - 1
+comp5111.assignment.cut.ToolBox$StringTools:674|if $z0 != 0 goto return -1
+comp5111.assignment.cut.ToolBox$StringTools:677|return -1
+comp5111.assignment.cut.ToolBox$LocaleTools:100|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isNumeric(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$LocaleTools:342|return $r1
+comp5111.assignment.cut.ToolBox$StringTools:434|i2 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:676|if $z1 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:679|i1 = i0 - 1
+comp5111.assignment.cut.ToolBox$LocaleTools:340|$r1 = staticinvoke <comp5111.assignment.cut.ToolBox$LocaleTools: java.util.Locale parseLocale(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:436|i3 = i2 - 1
+comp5111.assignment.cut.ToolBox$StringTools:678|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:438|i10 = 0
+comp5111.assignment.cut.ToolBox$LocaleTools:329|$r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:444|$i18 = i17
+comp5111.assignment.cut.ToolBox$LocaleTools:327|specialinvoke $r10.<java.lang.StringBuilder: void <init>(java.lang.String)>("Invalid locale format: ")
+comp5111.assignment.cut.ToolBox$LocaleTools:328|$r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:441|return 0
+comp5111.assignment.cut.ToolBox$LocaleTools:325|$r9 = new java.lang.IllegalArgumentException
+comp5111.assignment.cut.ToolBox$CharSequenceTools:448|if $i18 > 0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:417")
+comp5111.assignment.cut.ToolBox$LocaleTools:326|$r10 = new java.lang.StringBuilder
+comp5111.assignment.cut.ToolBox$LocaleTools:323|$c4 = virtualinvoke r0.<java.lang.String: char charAt(int)>(3)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:446|i17 = i17 + -1
+comp5111.assignment.cut.ToolBox$LocaleTools:324|if $c4 == 95 goto $r6 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$RegExTools:38|$r4 = virtualinvoke $r3.<java.util.regex.Matcher: java.lang.String replaceAll(java.lang.String)>(r2)
+comp5111.assignment.cut.ToolBox$RegExTools:39|return $r4
+comp5111.assignment.cut.ToolBox$RegExTools:36|return r0
+comp5111.assignment.cut.ToolBox$RegExTools:37|$r3 = virtualinvoke r1.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:680|i2 = lengthof r1
+comp5111.assignment.cut.ToolBox$RegExTools:35|if r2 != null goto $r3 = virtualinvoke r1.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$RegExTools:32|if r0 == null goto return r0
+comp5111.assignment.cut.ToolBox$StringTools:440|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:682|i10 = 0
+comp5111.assignment.cut.ToolBox$RegExTools:33|if r1 == null goto return r0
+comp5111.assignment.cut.ToolBox$StringTools:681|i3 = i2 - 1
+comp5111.assignment.cut.ToolBox$StringTools:684|c4 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i10)
+comp5111.assignment.cut.ToolBox$StringTools:441|c4 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i10)
+comp5111.assignment.cut.ToolBox$StringTools:683|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$LocaleTools:332|$r6 = new java.util.Locale
+comp5111.assignment.cut.ToolBox$StringTools:444|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:686|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$LocaleTools:333|$r7 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(1, 3)
+comp5111.assignment.cut.ToolBox$StringTools:443|i11 = 0
+comp5111.assignment.cut.ToolBox$StringTools:685|i11 = 0
+comp5111.assignment.cut.ToolBox$LocaleTools:330|specialinvoke $r9.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r12)
+comp5111.assignment.cut.ToolBox$StringTools:446|$c5 = r1[i11]
+comp5111.assignment.cut.ToolBox$StringTools:688|if $c5 != c4 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$LocaleTools:331|throw $r9
+comp5111.assignment.cut.ToolBox$StringTools:687|$c5 = r1[i11]
+comp5111.assignment.cut.ToolBox$StringTools:448|if $c5 != c4 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:689|if i10 >= i1 goto i10 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:449|$z0 = staticinvoke <java.lang.Character: boolean isHighSurrogate(char)>(c4)
+comp5111.assignment.cut.ToolBox$StringTools:858|return 0
+comp5111.assignment.cut.ToolBox$StringTools:859|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:852|z4 = 1
+comp5111.assignment.cut.ToolBox$StringTools:853|i4 = i4 + 1
+comp5111.assignment.cut.ToolBox$StringTools:850|$z2 = staticinvoke <java.lang.Character: boolean isLowerCase(char)>($c3)
+comp5111.assignment.cut.ToolBox$StringTools:851|if $z2 == 0 goto i4 = i4 + 1
+comp5111.assignment.cut.ToolBox$StringTools:856|if z4 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:857|return 1
+comp5111.assignment.cut.ToolBox$StringTools:854|if i4 < i1 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:841")
+comp5111.assignment.cut.ToolBox$StringTools:855|if z3 == 0 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:620|return i11
+comp5111.assignment.cut.ToolBox$StringTools:628|if $z1 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:627|$z1 = staticinvoke <comp5111.assignment.cut.ToolBox$ArrayTools: boolean isEmpty(char[])>(r1)
+comp5111.assignment.cut.ToolBox$StringTools:869|if $c0 == 45 goto (branch)
+comp5111.assignment.cut.ToolBox$StringTools:629|return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:624|goto [?= staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:616")]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:623|return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:622|if i11 >= 0 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:621|i11 = i11 + -1
+comp5111.assignment.cut.ToolBox$StringTools:860|if $z0 == 0 goto r1 = virtualinvoke r0.<java.lang.String: char[] toCharArray()>()
+comp5111.assignment.cut.ToolBox$StringTools:863|i39 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:864|z3 = 0
+comp5111.assignment.cut.ToolBox$StringTools:861|return 0
+comp5111.assignment.cut.ToolBox$StringTools:862|r1 = virtualinvoke r0.<java.lang.String: char[] toCharArray()>()
+comp5111.assignment.cut.ToolBox$StringTools:867|z6 = 0
+comp5111.assignment.cut.ToolBox$StringTools:868|$c0 = r1[0]
+comp5111.assignment.cut.ToolBox$StringTools:626|if $z0 != 0 goto return -1
+comp5111.assignment.cut.ToolBox$StringTools:865|z4 = 0
+comp5111.assignment.cut.ToolBox$StringTools:625|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:866|z5 = 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:411|if i1 < 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:639|$c5 = r1[i11]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:410|if i0 < 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:638|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:415|if i6 >= i2 goto $i18 = i17
+comp5111.assignment.cut.ToolBox$CharSequenceTools:657|i8 = 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:414|if i4 < i2 goto return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:413|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:412|if i2 >= 0 goto (branch)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:419|c8 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i7)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:418|i15 = i15 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:417|$i7 = i15
+comp5111.assignment.cut.ToolBox$CharSequenceTools:659|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:416|return 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:658|i9 = i0 - 1
+comp5111.assignment.cut.ToolBox$StringTools:870|$c38 = r1[0]
+comp5111.assignment.cut.ToolBox$StringTools:871|if $c38 != 43 goto $i2 = 1 + 1
+comp5111.assignment.cut.ToolBox$StringTools:631|i1 = i0 - 1
+comp5111.assignment.cut.ToolBox$StringTools:874|if i39 <= $i2 goto i44 = i39 + -1
+comp5111.assignment.cut.ToolBox$StringTools:630|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:875|$c22 = r1[1]
+comp5111.assignment.cut.ToolBox$StringTools:633|i3 = i2 - 1
+comp5111.assignment.cut.ToolBox$StringTools:872|goto [?= $i2 = 1 + 1]
+comp5111.assignment.cut.ToolBox$StringTools:632|i2 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:873|$i2 = 1 + 1
+comp5111.assignment.cut.ToolBox$StringTools:635|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:660|$i2 = i1 + i8
+comp5111.assignment.cut.ToolBox$StringTools:878|if $z1 != 0 goto i44 = i39 + -1
+comp5111.assignment.cut.ToolBox$StringTools:634|i10 = 0
+comp5111.assignment.cut.ToolBox$StringTools:879|$i23 = 1 + 1
+comp5111.assignment.cut.ToolBox$StringTools:637|i11 = 0
+comp5111.assignment.cut.ToolBox$StringTools:876|if $c22 != 48 goto i44 = i39 + -1
+comp5111.assignment.cut.ToolBox$StringTools:636|c4 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i10)
+comp5111.assignment.cut.ToolBox$StringTools:877|$z1 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean contains(java.lang.CharSequence,int)>(r0, 46)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:400|$r2 = (java.lang.String) r1
+comp5111.assignment.cut.ToolBox$StringTools:649|if $c8 != $c9 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:404|i16 = i1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:403|i15 = i0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:402|return $z3
+comp5111.assignment.cut.ToolBox$CharSequenceTools:401|$z3 = virtualinvoke $r3.<java.lang.String: boolean regionMatches(boolean,int,java.lang.String,int,int)>(z1, i0, $r2, i1, i2)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:408|$i5 = interfaceinvoke r1.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:407|i4 = $i3 - i0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:406|$i3 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:405|i17 = i2
+comp5111.assignment.cut.ToolBox$CharSequenceTools:409|i6 = $i5 - i1
+comp5111.assignment.cut.ToolBox$StringTools:881|if $c24 == 120 goto i41 = 1 + 2
+comp5111.assignment.cut.ToolBox$StringTools:882|$i31 = 1 + 1
+comp5111.assignment.cut.ToolBox$StringTools:640|if $c5 != c4 goto i11 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:880|$c24 = r1[$i23]
+comp5111.assignment.cut.ToolBox$StringTools:642|if i11 < i3 goto $i6 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:885|i41 = 1 + 2
+comp5111.assignment.cut.ToolBox$StringTools:641|if i10 >= i1 goto $z2 = staticinvoke <java.lang.Character: boolean isHighSurrogate(char)>(c4)
+comp5111.assignment.cut.ToolBox$StringTools:886|if i41 != i39 goto $i42 = lengthof r1
+comp5111.assignment.cut.ToolBox$StringTools:644|if $z2 == 0 goto return i10
+comp5111.assignment.cut.ToolBox$StringTools:883|$c32 = r1[$i31]
+comp5111.assignment.cut.ToolBox$StringTools:643|$z2 = staticinvoke <java.lang.Character: boolean isHighSurrogate(char)>(c4)
+comp5111.assignment.cut.ToolBox$StringTools:884|if $c32 != 88 goto $i33 = 1 + 1
+comp5111.assignment.cut.ToolBox$StringTools:646|$c8 = r1[$i6]
+comp5111.assignment.cut.ToolBox$StringTools:889|if $c25 < 48 goto $c26 = r1[i41]
+comp5111.assignment.cut.ToolBox$StringTools:645|$i6 = i11 + 1
+comp5111.assignment.cut.ToolBox$StringTools:648|$c9 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>($i7)
+comp5111.assignment.cut.ToolBox$StringTools:887|return 0
+comp5111.assignment.cut.ToolBox$StringTools:647|$i7 = i10 + 1
+comp5111.assignment.cut.ToolBox$StringTools:888|$c25 = r1[i41]
+comp5111.assignment.cut.ToolBox$StringTools:816|i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:817|i2 = 0
+comp5111.assignment.cut.ToolBox$StringTools:814|if $z0 == 0 goto i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:815|return 0
+comp5111.assignment.cut.ToolBox$StringTools:818|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:819|$c1 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i2)
+comp5111.assignment.cut.ToolBox$StringTools:812|return 1
+comp5111.assignment.cut.ToolBox$StringTools:813|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:810|i2 = i2 + 1
+comp5111.assignment.cut.ToolBox$StringTools:811|if i2 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:806")
+comp5111.assignment.cut.ToolBox$StringTools:827|$i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:828|if $i0 == 0 goto return 1
+comp5111.assignment.cut.ToolBox$StringTools:825|return 1
+comp5111.assignment.cut.ToolBox$StringTools:826|if r0 == null goto return 1
+comp5111.assignment.cut.ToolBox$StringTools:829|return 0
+comp5111.assignment.cut.ToolBox$StringTools:820|$z1 = staticinvoke <java.lang.Character: boolean isUpperCase(char)>($c1)
+comp5111.assignment.cut.ToolBox$StringTools:823|i2 = i2 + 1
+comp5111.assignment.cut.ToolBox$StringTools:824|if i2 < i0 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$StringTools", "comp5111.assignment.cut.ToolBox$StringTools:819")
+comp5111.assignment.cut.ToolBox$StringTools:821|if $z1 != 0 goto i2 = i2 + 1
+comp5111.assignment.cut.ToolBox$StringTools:822|return 0
+comp5111.assignment.cut.ToolBox$StringTools:838|i1 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:839|i4 = 0
+comp5111.assignment.cut.ToolBox$StringTools:836|z3 = 0
+comp5111.assignment.cut.ToolBox$StringTools:837|z4 = 0
+comp5111.assignment.cut.ToolBox$CharSequenceTools:613|i11 = i11 + -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:612|goto [?= $c12 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>(i11)]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:611|i11 = i10
+comp5111.assignment.cut.ToolBox$CharSequenceTools:610|c3 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:617|if $c12 != c3 goto staticinvoke <comp5111.assignment.MyCounter: void increaseStatementCounter(java.lang.String,java.lang.String)>("comp5111.assignment.cut.ToolBox$CharSequenceTools", "comp5111.assignment.cut.ToolBox$CharSequenceTools:613")
+comp5111.assignment.cut.ToolBox$CharSequenceTools:616|$c12 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>(i11)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:615|return -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:614|if i11 >= 0 goto $c12 = interfaceinvoke r1.<java.lang.CharSequence: char charAt(int)>(i11)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:619|if $z1 == 0 goto i11 = i11 + -1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:618|$z1 = staticinvoke <comp5111.assignment.cut.ToolBox$CharSequenceTools: boolean checkLaterThan1(java.lang.CharSequence,java.lang.CharSequence,int,int)>(r1, r0, i1, i11)
+comp5111.assignment.cut.ToolBox$StringTools:830|return 1
+comp5111.assignment.cut.ToolBox$StringTools:831|$z0 = staticinvoke <comp5111.assignment.cut.ToolBox$StringTools: boolean isEmpty(java.lang.CharSequence)>(r0)
+comp5111.assignment.cut.ToolBox$StringTools:834|if $i0 != 1 goto z3 = 0
+comp5111.assignment.cut.ToolBox$StringTools:835|return 0
+comp5111.assignment.cut.ToolBox$StringTools:832|if $z0 != 0 goto return 0
+comp5111.assignment.cut.ToolBox$StringTools:833|$i0 = interfaceinvoke r0.<java.lang.CharSequence: int length()>()
+comp5111.assignment.cut.ToolBox$StringTools:849|$c3 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i4)
+comp5111.assignment.cut.ToolBox$StringTools:847|z3 = 1
+comp5111.assignment.cut.ToolBox$StringTools:848|goto [?= i4 = i4 + 1]
+comp5111.assignment.cut.ToolBox$CharSequenceTools:602|if $z4 == 0 goto $i2 = i10 + i1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:601|$z4 = r1 instanceof java.lang.StringBuffer
+comp5111.assignment.cut.ToolBox$CharSequenceTools:600|return $i5
+comp5111.assignment.cut.ToolBox$CharSequenceTools:606|return $i4
+comp5111.assignment.cut.ToolBox$CharSequenceTools:605|$i4 = virtualinvoke $r2.<java.lang.StringBuffer: int lastIndexOf(java.lang.String,int)>($r3, i10)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:604|$r3 = interfaceinvoke r0.<java.lang.CharSequence: java.lang.String toString()>()
+comp5111.assignment.cut.ToolBox$CharSequenceTools:603|$r2 = (java.lang.StringBuffer) r1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:609|i10 = i0 - i1
+comp5111.assignment.cut.ToolBox$CharSequenceTools:608|if $i2 <= i0 goto c3 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(0)
+comp5111.assignment.cut.ToolBox$CharSequenceTools:607|$i2 = i10 + i1
+comp5111.assignment.cut.ToolBox$StringTools:841|if z3 == 0 goto $c2 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i4)
+comp5111.assignment.cut.ToolBox$StringTools:842|if z4 == 0 goto $c2 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i4)
+comp5111.assignment.cut.ToolBox$StringTools:840|goto [?= (branch)]
+comp5111.assignment.cut.ToolBox$StringTools:845|$z1 = staticinvoke <java.lang.Character: boolean isUpperCase(char)>($c2)
+comp5111.assignment.cut.ToolBox$StringTools:846|if $z1 == 0 goto $c3 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i4)
+comp5111.assignment.cut.ToolBox$StringTools:843|return 1
+comp5111.assignment.cut.ToolBox$StringTools:844|$c2 = interfaceinvoke r0.<java.lang.CharSequence: char charAt(int)>(i4)

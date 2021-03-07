@@ -257,7 +257,10 @@ public class MyCounter {
 		 */
 		try {
 		
-			File ofile = new File("executedStatement/executed_statement.txt");
+			File oDir = new File("executedStatement/records");
+			oDir.mkdirs();
+			
+			File ofile = new File("executedStatement/records/executed_statement.txt");
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 			
@@ -282,7 +285,10 @@ public class MyCounter {
 		 */
 		try {
 		
-			File ofile = new File("executedBranch/executed_branches.txt");
+			File oDir = new File("executedBranch/records");
+			oDir.mkdirs();
+			
+			File ofile = new File("executedBranch/records/executed_branches.txt");
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 			
@@ -306,8 +312,11 @@ public class MyCounter {
 		 * Export all executed lines
 		 */
 		try {
+			
+			File oDir = new File("executedLine/records");
+			oDir.mkdirs();
 		
-			File ofile = new File("executedLine/executed_lines.txt");
+			File ofile = new File("executedLine/records/executed_lines.txt");
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 			

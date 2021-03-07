@@ -10,15 +10,21 @@ import java.util.*;
 public class InvokeInstrumenter extends BodyTransformer {
 
 	static SootClass counterClass;
-	static SootMethod increaseStatementCounter, reportStatementCounter;
-	static int statementID = 1;
+	static SootMethod increaseStatementCounter, recordIf, checkBranch, reportCounter;
 	static HashMap<String, Integer> classStatementCount;
+	static HashMap<String, Integer> classBranchCount;
+	static HashMap<String, String> statementJimple;
+	static int statementCounter = 1;
 
 	static {
 		counterClass = Scene.v().loadClassAndSupport("comp5111.assignment.MyCounter");
-		increaseStatementCounter = counterClass.getMethod("void increaseStatementCounter(java.lang.String,int)");
-		reportStatementCounter = counterClass.getMethod("void reportStatementCounter()");
+		increaseStatementCounter = counterClass.getMethod("void increaseStatementCounter(java.lang.String,java.lang.String)");
+		recordIf = counterClass.getMethod("void recordIf(java.lang.String)");
+		checkBranch = counterClass.getMethod("void checkBranch(java.lang.String,java.lang.String)");
+		reportCounter = counterClass.getMethod("void reportCounter()");
 		classStatementCount = new HashMap<>();
+		classBranchCount = new HashMap<>();
+		statementJimple = new HashMap<>();
 		Scene.v().setSootClassPath(null);
 	}
 
@@ -31,7 +37,22 @@ public class InvokeInstrumenter extends BodyTransformer {
 		// body's method
 		SootMethod method = body.getMethod();
 		
+		// Get class name
 		String className = method.getDeclaringClass().toString();
+		
+		// Initialize statement counter for class
+		if (!classStatementCount.containsKey(className)) {
+			
+			classStatementCount.put(className, 0);
+            
+        }
+		
+		// Initialize branch counter for class
+		if (!classBranchCount.containsKey(className)) {
+			
+			classBranchCount.put(className, 0);
+            
+        }
 
 		// debugging
 		System.out.println("instrumenting method : " + method.getSignature());
@@ -47,28 +68,52 @@ public class InvokeInstrumenter extends BodyTransformer {
 			
 			// cast back to a statement.
 			Stmt stmt = (Stmt) stmtIt.next();
+			
+			String statementID = className + ":" + statementCounter;
 
 			if (!(stmt instanceof JIdentityStmt)) {
 				
-				if (!classStatementCount.containsKey(className)) {
+				statementJimple.put(statementID, String.valueOf(stmt));
 					
-					classStatementCount.put(className, 0);
-		            
-		        }
-				
 				classStatementCount.put(className, classStatementCount.get(className)+1);
 				
 				// call Chain.insertBefore() to insert instructions
 				InvokeExpr incExpr = Jimple.v().newStaticInvokeExpr(
-						increaseStatementCounter.makeRef(), StringConstant.v(className), IntConstant.v(statementID));
+						increaseStatementCounter.makeRef(), 
+						StringConstant.v(className), 
+						StringConstant.v(statementID));
 	
 				Stmt incStmt = Jimple.v().newInvokeStmt(incExpr);
 	
 				units.insertBefore(incStmt, stmt);
 				
-				statementID++;
+				statementCounter++;
+				
+				// call Chain.insertBefore() to insert instructions
+				incExpr = Jimple.v().newStaticInvokeExpr(
+						checkBranch.makeRef(), 
+						StringConstant.v(className), 
+						StringConstant.v(statementID));
+	
+				Stmt chkBranch = Jimple.v().newInvokeStmt(incExpr);
+	
+				units.insertBefore(chkBranch, stmt);
 				
 			}
+			
+			if (stmt instanceof JIfStmt) {
+				
+				classBranchCount.put(className, classBranchCount.get(className)+1);
+
+                InvokeExpr incExpr = Jimple.v().newStaticInvokeExpr(
+                		recordIf.makeRef(),
+                		StringConstant.v(statementID));
+                
+                Stmt incIf = Jimple.v().newInvokeStmt(incExpr);
+                
+                units.insertBefore(incIf, stmt);
+                
+            }
 			
 		}
 
@@ -87,7 +132,7 @@ public class InvokeInstrumenter extends BodyTransformer {
 						|| (stmt instanceof ReturnVoidStmt)) {
 					
 					InvokeExpr reportExpr = Jimple.v().newStaticInvokeExpr(
-							reportStatementCounter.makeRef());
+							reportCounter.makeRef());
 
 					Stmt reportStmt = Jimple.v().newInvokeStmt(reportExpr);
 
@@ -112,9 +157,59 @@ public class InvokeInstrumenter extends BodyTransformer {
 			
         } catch (Exception e) {
 
-        	System.err.println("Write file error...");
+        	System.err.println("Write statement count file error...");
         	
         }
 		
+		try {
+			
+			// Create folder for storing number of statement in each class
+			File oDir = new File("scripts/numOfBranch/");
+			oDir.mkdirs();
+			
+			File ofile = new File("scripts/numOfBranch/" + className + "_" + "branch_count.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			writer.write(Integer.toString(classBranchCount.get(className)*2));
+			
+			writer.close();
+			
+        } catch (Exception e) {
+
+        	System.err.println("Write branch count file error...");
+        	
+        }
+		
+	}
+	
+	public static void saveJimpleCode() {
+		
+		BufferedWriter writer = null;
+			
+		try {
+			
+			// Export all statements with id
+			File oDir = new File("scripts/statement_map/");
+			oDir.mkdirs();
+			
+			File ofile = new File("scripts/statement_map/statement_map.txt");
+			
+			writer = new BufferedWriter(new FileWriter(ofile));
+			
+			for (Map.Entry<String, String> entry : statementJimple.entrySet()) {
+				
+				String statementID = entry.getKey();
+			    String jimpleCode = entry.getValue();
+			
+			    writer.write(statementID + ":" + jimpleCode + "\r\n");
+			
+			}
+			
+        } catch (Exception e) {
+
+        	System.err.println("Export Jimple error...");
+        	
+        }
 	}
 }

@@ -8,27 +8,32 @@ import java.util.*;
 public class MyCounter {
 	
 	/* the counter, initialize to zero */
-	private static HashMap<Integer, Integer> c;
-	private static HashMap<Integer, String> statementClass;
+	private static HashMap<String, Integer> statements;
+	private static HashMap<String, String> statementClass;
+	private static HashMap<String, Integer> branches;
+	private static HashMap<String, String> branchClass;
+	private static String lastIf;
 	
 	static {
-		c = new HashMap<>();
+		statements = new HashMap<>();
 		statementClass = new HashMap<>();
+		branches = new HashMap<>();
+		branchClass = new HashMap<>();
+		lastIf = null;
 	}
 	
 	/**
-	* increases the counter by <pre>howmany</pre>
-	* @param howmany, the increment of the counter.
+	* increases the counter of specific statement
 	*/
-	public static synchronized void increaseStatementCounter(String className, int statementID) {
+	public static synchronized void increaseStatementCounter(String className, String statementID) {
 		
-		if (!c.containsKey(statementID)) {
+		if (!statements.containsKey(statementID)) {
 			
-            c.put(statementID, 0);
+            statements.put(statementID, 0);
             
         }
 		
-		c.put(statementID, c.get(statementID) + 1);
+		statements.put(statementID, statements.get(statementID) + 1);
 		
 		if (!statementClass.containsKey(statementID)) {
 			
@@ -36,19 +41,59 @@ public class MyCounter {
             
         }
 		
+	}
+	
+	/**
+	* increases the counter of specific branch
+	*/
+	public static synchronized void recordIf(String statementID) {
+		
+		lastIf = statementID;
+		
+	}
+	
+	/**
+	* increases the counter of specific branch
+	*/
+	public static synchronized void checkBranch(String className, String statementID) {
+		
+		if (lastIf == null) {
+			return;
+		}
+		
+		String branchID = lastIf + "-" + statementID;
+		
+		if (!branches.containsKey(branchID)) {
+			
+			branches.put(branchID, 0);
+            
+        }
+		
+		branches.put(branchID, branches.get(branchID) + 1);
+		
+		if (!branchClass.containsKey(branchID)) {
+			
+			branchClass.put(branchID, className);
+            
+        }
+		
+		lastIf = null;
 		
 	}
 	
 	/**
 	* reports the counter content.
 	*/
-	public static synchronized void reportStatementCounter() {
+	public static synchronized void reportCounter() {
 		
+		/**
+		 * report statement counter for each class
+		 */
 		Map<String, Integer> statementCounterPerClass = new HashMap<String, Integer>();
 		
-		for (Map.Entry<Integer, String> entry : statementClass.entrySet()) {
+		for (Map.Entry<String, String> entry : statementClass.entrySet()) {
 			
-		    int statementID = entry.getKey();
+			String statementID = entry.getKey();
 		    String className = entry.getValue();
 		    
 		    if (!statementCounterPerClass.containsKey(className)) {
@@ -73,6 +118,53 @@ public class MyCounter {
 				oDir.mkdirs();
 				
 				File ofile = new File("executedStatement/" + className + "_" + "statement_count.txt");
+				
+				BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+				
+				writer.write(Integer.toString(counter));
+				
+				writer.close();
+				
+	        } catch (Exception e) {
+
+	        	System.err.println("Write file error...");
+	        	
+	        }
+		
+		}
+		
+		/**
+		 * report branch counter for each class
+		 */
+		Map<String, Integer> branchCounterPerClass = new HashMap<String, Integer>();
+		
+		for (Map.Entry<String, String> entry : branchClass.entrySet()) {
+			
+		    String branchID = entry.getKey();
+		    String className = entry.getValue();
+		    
+		    if (!branchCounterPerClass.containsKey(className)) {
+				
+		    	branchCounterPerClass.put(className, 0);
+	            
+	        }
+		    
+		    branchCounterPerClass.put(className, branchCounterPerClass.get(className) + 1);
+		      
+		}
+		
+		for (Map.Entry<String, Integer> entry : branchCounterPerClass.entrySet()) {
+			
+			String className = entry.getKey();
+			int counter = entry.getValue();
+			
+			try {
+				
+				// Create folder for storing number of branch in each class
+				File oDir = new File("executedBranch/");
+				oDir.mkdirs();
+				
+				File ofile = new File("executedBranch/" + className + "_" + "branch_count.txt");
 				
 				BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
 				

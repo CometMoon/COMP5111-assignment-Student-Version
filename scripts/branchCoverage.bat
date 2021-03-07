@@ -40,4 +40,8 @@ set /a coverageFlt=!allExecutedBranch!*10000 / !allBranch! %% 100
 	
 set coverage=!coverageInt!.!coverageFlt!
 
+echo.
+echo Overall Total Number of Branch: !allBranch!
+echo Overall Number of Executed Branch: !allExecutedBranch!
+echo.
 echo Overall Branch Coverage: !coverage!%%

@@ -1,6 +1,8 @@
 package comp5111.assignment;
 import soot.*;
 import soot.jimple.internal.*;
+import soot.tagkit.LineNumberTag;
+import soot.tagkit.Tag;
 import soot.jimple.*;
 import soot.util.*;
 
@@ -10,9 +12,11 @@ import java.util.*;
 public class InvokeInstrumenter extends BodyTransformer {
 
 	static SootClass counterClass;
-	static SootMethod increaseStatementCounter, recordIf, checkBranch, reportCounter;
+	static SootMethod increaseStatementCounter, recordIf, checkBranch, increaseLineCounter, reportCounter;
 	static HashMap<String, Integer> classStatementCount;
 	static HashMap<String, Integer> classBranchCount;
+	static HashMap<String, Integer> classLineCount;
+	static HashMap<String, Integer> lineCount;
 	static HashMap<String, String> statementJimple;
 	static int statementCounter = 1;
 
@@ -21,9 +25,12 @@ public class InvokeInstrumenter extends BodyTransformer {
 		increaseStatementCounter = counterClass.getMethod("void increaseStatementCounter(java.lang.String,java.lang.String)");
 		recordIf = counterClass.getMethod("void recordIf(java.lang.String)");
 		checkBranch = counterClass.getMethod("void checkBranch(java.lang.String,java.lang.String)");
+		increaseLineCounter = counterClass.getMethod("void increaseLineCounter(java.lang.String,java.lang.String)");
 		reportCounter = counterClass.getMethod("void reportCounter()");
 		classStatementCount = new HashMap<>();
 		classBranchCount = new HashMap<>();
+		classLineCount = new HashMap<>();
+		lineCount = new HashMap<>();
 		statementJimple = new HashMap<>();
 		Scene.v().setSootClassPath(null);
 	}
@@ -53,6 +60,13 @@ public class InvokeInstrumenter extends BodyTransformer {
 			classBranchCount.put(className, 0);
             
         }
+		
+		// Initialize line counter for class
+		if (!classLineCount.containsKey(className)) {
+			
+			classLineCount.put(className, 0);
+            
+        }
 
 		// debugging
 		System.out.println("instrumenting method : " + method.getSignature());
@@ -74,7 +88,7 @@ public class InvokeInstrumenter extends BodyTransformer {
 			if (!(stmt instanceof JIdentityStmt)) {
 				
 				statementJimple.put(statementID, String.valueOf(stmt));
-					
+				
 				classStatementCount.put(className, classStatementCount.get(className)+1);
 				
 				// call Chain.insertBefore() to insert instructions
@@ -115,6 +129,37 @@ public class InvokeInstrumenter extends BodyTransformer {
                 
             }
 			
+			for (Iterator j = stmt.getTags().iterator(); j.hasNext(); ) {
+				
+				Tag tag = (Tag)j.next();
+				
+				if (tag instanceof LineNumberTag) {
+					
+					String lineNumber = String.valueOf(((LineNumberTag) tag).getLineNumber());
+					
+					if (!lineCount.containsKey(lineNumber)) {
+					
+						lineCount.put(lineNumber, 1);
+						
+						classLineCount.put(className, classLineCount.get(className)+1);
+	
+		                InvokeExpr incExpr = Jimple.v().newStaticInvokeExpr(
+		                		increaseLineCounter.makeRef(),
+		                		StringConstant.v(className),
+		                		StringConstant.v(lineNumber));
+		                
+		                Stmt incIf = Jimple.v().newInvokeStmt(incExpr);
+		                
+		                units.insertBefore(incIf, stmt);
+		                
+					}
+					
+					// System.err.println(String.valueOf(lineNumber));
+					
+				}
+				
+			}
+		
 		}
 
 		// Check if it is main method
@@ -178,6 +223,26 @@ public class InvokeInstrumenter extends BodyTransformer {
         } catch (Exception e) {
 
         	System.err.println("Write branch count file error...");
+        	
+        }
+		
+		try {
+			
+			// Create folder for storing number of statement in each class
+			File oDir = new File("scripts/numOfLine/");
+			oDir.mkdirs();
+			
+			File ofile = new File("scripts/numOfLine/" + className + "_" + "line_count.txt");
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(ofile));
+			
+			writer.write(Integer.toString(classLineCount.get(className)));
+			
+			writer.close();
+			
+        } catch (Exception e) {
+
+        	System.err.println("Write line count file error...");
         	
         }
 		

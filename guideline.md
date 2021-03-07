@@ -111,12 +111,12 @@ Overall {Branch} Coverage: {Percentage of Coverage}
 
 ## Coverage difference
 
-| Test Case | Statement Coverage (EclEmma) | Branch Coverage (EclEmma) | Statement Coverage (Soot) | Branch Coverage (Soot) |
-|:---------:|:----------------------------:|:-------------------------:|:-------------------------:|:----------------------:|
-| Randoop0  | 53.4%                        | 43.7%                     |                           |                        |
-| Randoop1  | 50.6%                        | 41.0%                     | 51.98%                    | 42.26%                 |
-| Randoop2  | 50.6%                        | 41.2%                     |                           |                        |
-| Randoop3  | 52.2%                        | 42.1%                     |                           |                        |
-| Randoop4  | 52.3%                        | 42.1%                     |                           |                        |
+| Test Case | Statement Coverage (EclEmma) | Branch Coverage (EclEmma) | Line Coverage (EclEmma) | Statement Coverage (Soot) | Branch Coverage (Soot) | Line Coverage (Soot) |
+|:---------:|:----------------------------:|:-------------------------:|:-----------------------:|:-------------------------:|:----------------------:|:--------------------:|
+| Randoop0  | 53.4%                        | 43.7%                     |                         |                           |                        |                      |
+| Randoop1  | 50.6%                        | 41.0%                     | 52.8%                   | 51.98%                    | 42.26%                 | 53.86%               |
+| Randoop2  | 50.6%                        | 41.2%                     |                         |                           |                        |                      |
+| Randoop3  | 52.2%                        | 42.1%                     |                         |                           |                        |                      |
+| Randoop4  | 52.3%                        | 42.1%                     |                         |                           |                        |                      |
 
 

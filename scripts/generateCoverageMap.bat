@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 
 if not exist coverageMap mkdir coverageMap
-goto there
+
 rem Statement Coverage
 
 echo Generating Statement Coverage Report...
@@ -52,7 +52,7 @@ for /F "tokens=* delims=" %%a in (coverageMap/tmp.txt) do (
 	)
    
 )
-:there
+
 rem Branch Coverage
 
 echo Generating Branch Coverage Report...
@@ -82,14 +82,26 @@ for /F "tokens=* delims=" %%a in (coverageMap/tmp.txt) do (
 		for /f "tokens=1 delims=^|" %%b in ("%%a") do (
 			
 			if "%%b" == "!es:~0,-1!" (
-			
-				echo Yes ^| %%a >>coverageMap/branch_map.txt
 				
 				set /A i+=1
+				
+				for /f "tokens=1 delims=^|" %%c in ("!i!") do ( set es=!executedBranch[%%c]! )
+				
+				if "%%b" == "!es:~0,-1!" (
+				
+					echo Yes  ^| %%a >>coverageMap/branch_map.txt
+					
+					set /A i+=1
+				
+				) else (
+				
+					echo Half ^| %%a >>coverageMap/branch_map.txt
+				
+				)
 			
 			) else (
 			
-				echo No  ^| %%a >>coverageMap/branch_map.txt
+				echo No   ^| %%a >>coverageMap/branch_map.txt
 			
 			)
 		
@@ -97,7 +109,7 @@ for /F "tokens=* delims=" %%a in (coverageMap/tmp.txt) do (
 
 	) else (
 	
-		echo No  ^| %%a >>coverageMap/branch_map.txt
+		echo No   ^| %%a >>coverageMap/branch_map.txt
 	
 	)
    
